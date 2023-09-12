@@ -1,0 +1,60 @@
+﻿portrait_has_unique_sword_trigger = {
+		any_equipped_character_artifact = {
+			artifact_type = sword   						
+			OR = {
+				has_variable = vs_sword_1
+				has_variable = vs_sword_2
+				has_variable = vs_sword_3
+				
+			}	
+		}
+	}
+
+portrait_has_unique_dagger_trigger = {
+		any_equipped_character_artifact = { 
+			artifact_type = dagger  						
+			OR = {
+				has_variable = vs_dagger_1
+				
+			}	
+		}
+	}
+
+portrait_has_unique_spear_trigger = {
+		any_equipped_character_artifact = { 	
+			artifact_type = spear  					
+			OR = {
+				has_variable = vs_spear_1
+				
+			}	
+		}
+	}
+
+portrait_has_unique_mace_trigger = {
+		any_equipped_character_artifact = { 
+			artifact_type = mace  						
+			OR = {
+				has_variable = vs_mace
+				
+			}	
+		}
+	}
+
+portrait_has_unique_axe_trigger = {
+		any_equipped_character_artifact = { 		
+			artifact_type = axe  				
+			OR = {
+				has_variable = vs_axe				
+			}	
+		}
+	}
+
+	portrait_has_unique_hammer_trigger = {
+		any_equipped_character_artifact = { 
+			artifact_type = hammer  						
+			OR = {
+				has_variable = orys_hammer
+				
+			}	
+		}
+	}

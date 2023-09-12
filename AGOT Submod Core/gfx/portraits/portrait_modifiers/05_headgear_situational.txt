@@ -1,0 +1,586 @@
+﻿headgear_situational = {
+
+	usage = game
+	selection_behavior = weighted_random
+	priority = 5
+
+
+	western_stealth = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = western_stealth
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = {
+			western_stealth
+			western_stealth_hood
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 110
+				portrait_stealth_trigger = yes
+				OR = {
+					portrait_western_clothing_trigger = yes
+					portrait_byzantine_clothing_trigger = yes
+					portrait_northern_clothing_trigger = yes
+				}
+			}
+		}
+	}
+
+	mena_stealth = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = mena_stealth
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = {
+			mena_stealth
+			mena_stealth_hood
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 110
+				portrait_stealth_trigger = yes
+				OR = {
+					portrait_mena_clothing_trigger = yes
+					portrait_indian_clothing_trigger = yes
+					portrait_steppe_clothing_trigger = yes
+					portrait_african_clothing_trigger = yes
+				}
+			}
+		}
+	}
+
+	jester_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+
+				gene = headgear
+				template = ep1_jester
+				range = { 0 1 }
+			}
+		}
+		outfit_tags = { jester_outfit }
+		weight = {
+			base = -100
+			modifier = {
+				add = 1000
+				OR = {
+					portrait_jester_trigger = { CULTURE_INPUT = western }
+					portrait_jester_trigger = { CULTURE_INPUT = byzantine }
+					portrait_jester_trigger = { CULTURE_INPUT = northern }
+				}				
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_adult = no
+					should_be_naked_trigger = yes
+				}
+			}
+		}
+	}
+	
+	#AGOT Disabled
+	# hajj_headgear = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = headgear
+	# 			template = mena_common
+	# 			range = { 0 1 } # For the randomness to work correctly
+	# 		}
+	# 	}	
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 500
+	# 			exists = this
+	# 			OR = {
+	# 				portrait_ep2_hajj_clothes_trigger = yes
+	# 				portrait_ep2_ihram_clothes_trigger = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# EP2 - WEDDINGS
+
+	wedding_western_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = western_wedding
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		outfit_tags = { spouse_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_ep2_dlc_trigger = yes
+				portrait_ep2_wedding_clothes_trigger = yes
+				OR = {
+					portrait_western_clothing_trigger = yes
+					portrait_northern_clothing_trigger = yes
+				}
+			}
+		}
+	}
+
+	wedding_mena_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = mena_wedding
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		outfit_tags = { spouse_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_ep2_dlc_trigger = yes
+				portrait_ep2_wedding_clothes_trigger = yes
+				OR = {
+					portrait_mena_clothing_trigger = yes
+					portrait_african_clothing_trigger = yes
+					portrait_indian_clothing_trigger = yes
+					portrait_steppe_clothing_trigger = yes
+				}
+			}
+		}
+	}
+
+	wedding_byz_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = byzantine_wedding
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { spouse_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_ep2_dlc_trigger = yes
+				portrait_ep2_wedding_clothes_trigger = yes
+				portrait_byzantine_clothing_trigger = yes
+			}
+		}
+	}
+	
+	# BP2
+	university_teacher_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = special_headgear_spectacles
+				template = spectacles
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { spectacles_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				OR = {
+					has_character_flag = teacher_1
+					has_character_flag = teacher_2
+					has_character_flag = has_reading_glasses
+				}
+			}
+		}
+	}
+
+
+kingsguard_headgear_01 = {
+	    dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = KG_war_common 
+				range = { 0 0 }
+			}
+		}
+	    weight = {
+			base = -100
+			modifier = {
+				add = 1000
+				is_aotk_loaded_trigger = yes
+				has_trait = kingsguard
+				#portrait_wear_armor_trigger = yes
+				has_game_rule = show_armor_enabled
+				exists = title:e_the_iron_throne.holder
+				title:e_the_iron_throne.holder = {
+					primary_title = { 
+						has_variable = kingsguard 
+						OR = {
+							AND = {
+								has_variable = kingsguard_choice 
+								var:kingsguard_choice = 0
+							}
+							NOT = { has_variable = kingsguard_choice }
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					#is_adult = no
+					should_be_naked_trigger = yes
+				}
+			}			
+		}
+	}
+	kingsguard_headgear_02 = {
+	    dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			accessory = {
+				mode = add
+
+				gene = headgear
+				template = KG_war_common 
+				range = { 0.3 0.3 }
+			}
+		}
+	    weight = {
+			base = -100
+			modifier = {
+				add = 1002
+				is_aotk_loaded_trigger = yes
+				has_trait = kingsguard
+				#portrait_wear_armor_trigger = yes
+				has_game_rule = show_armor_enabled
+				exists = title:e_the_iron_throne.holder
+				title:e_the_iron_throne.holder = {
+					primary_title = { 
+						has_variable = kingsguard 
+						AND = {
+							has_variable = kingsguard_choice 
+							var:kingsguard_choice = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					#is_adult = no
+					should_be_naked_trigger = yes
+				}
+			}			
+		}
+	}
+	kingsguard_headgear_03 = {
+	    dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			accessory = {
+				mode = add
+
+				gene = headgear
+				template = KG_war_common 
+				range = { 0.5 0.5 }
+			}
+		}
+	    weight = {
+			base = -100
+			modifier = {
+				add = 1003
+				is_aotk_loaded_trigger = yes
+				has_trait = kingsguard
+				#portrait_wear_armor_trigger = yes
+				has_game_rule = show_armor_enabled
+				exists = title:e_the_iron_throne.holder
+				title:e_the_iron_throne.holder = {
+					primary_title = { 
+						has_variable = kingsguard 
+						AND = {
+							has_variable = kingsguard_choice 
+							var:kingsguard_choice = 2
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					#is_adult = no
+					should_be_naked_trigger = yes
+				}
+			}			
+		}
+	}
+	kingsguard_headgear_04 = {
+	    dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			accessory = {
+				mode = add
+
+				gene = headgear
+				template = KG_war_common 
+				range = { 0.7 0.7 }
+			}
+		}
+	    weight = {
+			base = -100
+			modifier = {
+				add = 1004
+				is_aotk_loaded_trigger = yes
+				has_trait = kingsguard
+				#portrait_wear_armor_trigger = yes
+				has_game_rule = show_armor_enabled
+				exists = title:e_the_iron_throne.holder
+				title:e_the_iron_throne.holder = {
+					primary_title = { 
+						has_variable = kingsguard 
+						AND = {
+							has_variable = kingsguard_choice 
+							var:kingsguard_choice = 3
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					#is_adult = no
+					should_be_naked_trigger = yes
+				}
+			}			
+		}
+	}
+	kingsguard_headgear_05 = {
+	    dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			accessory = {
+				mode = add
+
+				gene = headgear
+				template = KG_war_common 
+				range = { 1 1 }
+			}
+		}
+	    weight = {
+			base = -100
+			modifier = {
+				add = 1005
+				is_aotk_loaded_trigger = yes
+				has_trait = kingsguard
+				#portrait_wear_armor_trigger = yes
+				has_game_rule = show_armor_enabled
+				exists = title:e_the_iron_throne.holder
+				title:e_the_iron_throne.holder = {
+					primary_title = { 
+						has_variable = kingsguard 
+						AND = {
+							has_variable = kingsguard_choice 
+							var:kingsguard_choice = 4
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					#is_adult = no
+					should_be_naked_trigger = yes
+				}
+			}			
+		}
+	}
+	
+	#AGOT Added
+	agot_headgear_kingsguard = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = Kingsguard_Helm_1
+				value = 1
+			}
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			morph = {
+				mode = modify
+				gene = gene_chin_forward
+				template = chin_forward_neg
+				value = -1
+			}
+			morph = {
+				mode = modify
+				gene = gene_jaw_forward
+				template = jaw_forward_pos
+				value = -1
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				AND = {
+					has_trait = kingsguard
+					portrait_wear_armor_trigger = yes
+					portrait_wear_helmet_trigger = yes
+					NOT = { has_game_rule = show_armor_enabled }
+				}
+			}
+		}
+	}
+	agot_maester_chain_1_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_1
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				has_trait = maester
+				age > 15
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}
+	agot_maester_chain_2_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_2
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 510
+				has_trait = maester
+				learning >= 10
+				age >= 25
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}	
+	agot_maester_chain_3_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_3
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 520
+				has_trait = maester
+				learning >= 18
+				age >= 30
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}	
+	agot_maester_chain_4_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_4
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 530
+				has_trait = maester
+				learning >= 25
+				age >= 40
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}	
+	agot_grandmaester_chain_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_grandmaester_chain
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_trait = maester
+				AND = {
+					exists = title:e_the_iron_throne.holder
+					employer ?= title:e_the_iron_throne.holder
+				}
+			}
+		}
+	}
+
+}
