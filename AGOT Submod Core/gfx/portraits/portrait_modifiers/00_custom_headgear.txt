@@ -1121,6 +1121,14 @@
 		}
 		template = rhaella_crown
 	}
+	
+	add_accessory_modifiers = {
+		gene = headgear
+		is_valid_custom = {
+			is_crowns_westeros_loaded_trigger = yes
+		}
+		template = crowns_of_westeros
+	}
 
 	##Armor of the Kingsguard
 	add_accessory_modifiers = {
