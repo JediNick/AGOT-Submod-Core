@@ -3770,9 +3770,26 @@ headgear_base = {
 			}
 		}
 	}
-	
 
-agot_headgear_crown_of_westerling_crown = {
+	agot_headgear_crown_of_the_wall_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_wall
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_wall_artifact }
+			}
+		}
+	}
+
+	agot_headgear_crown_of_westerling_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -3784,7 +3801,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_westerling_artifact }
+			}
+			modifier = {
 				add = 250
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_westerling_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -3805,7 +3827,7 @@ agot_headgear_crown_of_westerling_crown = {
 			}
 		}
 	}
-		
+
 	agot_headgear_crown_of_the_tides_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -3818,7 +3840,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_tides_artifact }
+			}
+			modifier = {
 				add = 250
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_tides_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -3853,6 +3880,7 @@ agot_headgear_crown_of_westerling_crown = {
 			base = 0
 			modifier = {
 				add = 241
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -3886,7 +3914,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }
+			}
+			modifier = {
 				add = 250
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -3908,7 +3941,7 @@ agot_headgear_crown_of_westerling_crown = {
 			}
 		}
 	}
-	
+
 	agot_headgear_crown_of_gardener_war_iron_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -3921,7 +3954,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_war_iron_artifact }
+			}
+			modifier = {
 				add = 255
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_war_iron_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -3956,7 +3994,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_mudd_artifact }
+			}
+			modifier = {
 				add = 250
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_mudd_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -3978,7 +4021,6 @@ agot_headgear_crown_of_westerling_crown = {
 		}
 	}
 
-
 	agot_headgear_crown_of_the_grey_king_rusted_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -3991,7 +4033,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_rusted_artifact }
+			}
+			modifier = {
 				add = 270
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_rusted_artifact }}
 				this = character:Grey_King_2 # The Grey King
 			}
 		}
@@ -4009,8 +4056,67 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_nights_king_artifact }
+			}
+			modifier = {
 				add = 270
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_nights_king_artifact }}
 				this = character:Stark_13 # The Night's King
+			}
+		}
+	}
+
+	agot_headgear_crown_of_true_winter_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_true_winter
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_true_winter_artifact }
+			}
+		}
+	}
+
+	agot_headgear_crown_of_rhllor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_rhllor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_rhllor_artifact }
+			}
+		}
+	}
+	
+	agot_headgear_circlet_of_rhllor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = circlet_of_rhllor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_of_rhllor_artifact }
 			}
 		}
 	}
@@ -4027,7 +4133,12 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jeyne_westerling_artifact }
+			}
+			modifier = {
 				add = 270
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jeyne_westerling_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -4044,12 +4155,12 @@ agot_headgear_crown_of_westerling_crown = {
 						}
 					}
 					this = character:Westerling_2 # Jeyne Westerling
-					is_spouse_of = character:Stark_6 # Robb Stark
+					is_spouse_of_even_if_dead = character:Stark_6 # Robb Stark
 				}
 			}
 		}
 	}
-	
+
 	agot_headgear_crown_of_winter_roses_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -4062,7 +4173,16 @@ agot_headgear_crown_of_westerling_crown = {
 		weight = {
 			base = 0
 			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+			modifier = {
 				add = 290
+				is_crowns_westeros_loaded_trigger = yes
 				this = character:Stark_5 # Lyanna Stark
 			}
 		}
@@ -4179,7 +4299,7 @@ agot_headgear_crown_of_westerling_crown = {
 		}
 	}
 	
-		agot_headgear_crown_of_the_grey_king_crown = {
+	agot_headgear_crown_of_the_grey_king_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -4195,28 +4315,6 @@ agot_headgear_crown_of_westerling_crown = {
 				is_crowns_westeros_loaded_trigger = yes
 				AND = {
 					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-
-	agot_headgear_crown_of_true_winter_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_true_winter
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_true_winter_artifact }
 					agot_is_independent_ruler = yes
 				}
 			}
@@ -4263,77 +4361,6 @@ agot_headgear_crown_of_westerling_crown = {
 					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_seven_artifact }
 					agot_is_independent_ruler = yes
 				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_rhllor_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_rhllor
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_rhllor_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_circlet_of_rhllor_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = circlet_of_rhllor
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_of_rhllor_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_winter_roses_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_winter_roses
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 290
-				is_crowns_westeros_loaded_trigger = yes
-				this = character:Stark_5 # Lyanna Stark
 			}
 		}
 	}
@@ -6282,28 +6309,6 @@ agot_headgear_crown_of_westerling_crown = {
 	}
 	
 ### Crowns of Westeros - W Crowns ###
-
-	agot_headgear_crown_of_the_wall_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_wall
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_wall_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
 	
 	agot_headgear_crown_of_the_iron_throne_crown = {
 		dna_modifiers = {
