@@ -676,4 +676,20 @@
 		}
 		template = kingsguard_armor_clothes
 	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		is_valid_custom = {
+			is_lotd_loaded_trigger = yes
+		}
+		template = valyrian_nobility_clothing
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		is_valid_custom = {
+			is_lotd_loaded_trigger = yes
+		}
+		template = valyrian_nobility_clothing_dyn
+	}
 }

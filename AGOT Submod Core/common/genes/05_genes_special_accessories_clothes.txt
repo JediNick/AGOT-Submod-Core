@@ -2372,6 +2372,22 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			
+			#AGOT Added
+			silentsister_clothes = {
+				index = 122
+
+				male = {
+					1 = male_clothes_southern_maester_01
+				}
+				female = {
+					1 = female_clothes_religious_zoroastrian_high_01
+					
+				}
+				boy = male
+				girl = female
+			}
+			
 
 			#NOTAGOTADDED
 			kingsguard_armor_clothes = {
@@ -2397,21 +2413,36 @@ special_genes = {
 				girl = female
 			}
 
+			valyrian_nobility_clothing = {
+				index = 201
 
-			# valyrian_nobility_clothing = {
-			# 	index = 201
+				male = {
+					1 = male_clothes_secular_valyrian_nobility_01_high
+				}
 
-			# 	male = {
-			# 		1 = male_clothes_secular_valyrian_nobility_01_high
-			# 	}
+				female = {
+					1 = female_clothes_secular_valyrian_dress_01_high
+				}
 
-			# 	female = {
-			# 		1 = female_clothes_secular_valyrian_dress_01_high
-			# 	}
+				boy = male
+				girl = female
+			}
 
-			# 	boy = male
-			# 	girl = female
-			# }				
+			valyrian_nobility_clothing_dyn = {
+				index = 202
+
+				male = {
+					1 = male_clothes_secular_valyrian_nobility_01_high_dyn
+				}
+
+				female = {
+				 	1 = female_clothes_secular_valyrian_dress_01_high_dyn
+					1 = female_clothes_secular_valyrian_dress_02_high_dyn
+				}
+
+				boy = male
+				girl = female
+			}					
 		}	
 	}
 }

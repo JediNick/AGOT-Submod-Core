@@ -3738,12 +3738,10 @@ headgear_base = {
 			base = 0
 			modifier = {
 				add = 300
-				is_crowns_westeros_loaded_trigger = yes
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_rhaella_artifact }
 			}
 			modifier = {
 				add = 240
-				is_crowns_westeros_loaded_trigger = yes
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_rhaella_artifact }}
 				this = character:Targaryen_2 # Rhaella
 			}
@@ -3763,19 +3761,628 @@ headgear_base = {
 			base = 0
 			modifier = {
 				add = 300
-				is_crowns_westeros_loaded_trigger = yes
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_visenya_artifact }
 			}
 			modifier = {
 				add = 240
-				is_crowns_westeros_loaded_trigger = yes
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_visenya_artifact }}
 				this = character:Targaryen_28 # Visenya
 			}
 		}
 	}
 	
-### Crowns of Westeros - Canon Crowns ###
+
+agot_headgear_crown_of_westerling_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_westerling
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Westerling
+				}
+			}
+		}
+	}
+		
+	agot_headgear_crown_of_the_tides_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_tides
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Velaryon
+				}
+			}
+		}
+	}
+	
+	agot_headgear_dead_crown_of_gardener_peace_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_gardener_peace
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 241
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Gardener
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_gardener_peace_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_gardener_peace
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Gardener
+					days_of_continuous_peace >= 0
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_gardener_war_iron_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_gardener_war_iron
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 255
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Gardener
+					days_of_continuous_war >= 1
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_mudd_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_mudd
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Mudd
+				}
+			}
+		}
+	}
+
+
+	agot_headgear_crown_of_the_grey_king_rusted_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_grey_king_rusted
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 270
+				this = character:Grey_King_2 # The Grey King
+			}
+		}
+	}
+
+	agot_headgear_crown_of_the_nights_king_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_nights_king
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 270
+				this = character:Stark_13 # The Night's King
+			}
+		}
+	}
+
+	agot_headgear_crown_of_jeyne_westerling_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_jeyne_westerling
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 270
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					this = character:Westerling_2 # Jeyne Westerling
+					is_spouse_of = character:Stark_6 # Robb Stark
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 290
+				this = character:Stark_5 # Lyanna Stark
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_gardener_war_bronze_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_gardener_war_bronze
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_war_bronze_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	
+	agot_headgear_crown_of_castamere_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_castamere
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_castamere_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_castamere_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Reyne
+				}
+			}
+		}
+	}
+
+	agot_headgear_crown_of_sharp_point_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_sharp_point
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_sharp_point_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_sharp_point_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Bar_Emmon
+				}
+			}
+		}
+	}
+	
+		agot_headgear_crown_of_the_grey_king_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_the_grey_king
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+
+	agot_headgear_crown_of_true_winter_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_true_winter
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_true_winter_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_the_old_gods_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_the_old_gods
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_old_gods_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_the_seven_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_the_seven
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_seven_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_rhllor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_rhllor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_rhllor_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_circlet_of_rhllor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = circlet_of_rhllor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_of_rhllor_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_crown_of_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+			modifier = {
+				add = 290
+				is_crowns_westeros_loaded_trigger = yes
+				this = character:Stark_5 # Lyanna Stark
+			}
+		}
+	}
+
+	agot_headgear_crown_of_jon_north_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_jon_north
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jon_north_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+
+	agot_headgear_crown_of_jon_icefire_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_jon_icefire
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jon_icefire_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	### Crowns of Westeros - Canon Crowns ###
 	
 	agot_headgear_stepstone_crown = {
 		dna_modifiers = {
@@ -6154,678 +6761,6 @@ headgear_base = {
 		}
 	}
 
-	agot_headgear_crown_of_westerling_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_westerling
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_westerling_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_westerling_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Westerling
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_castamere_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_castamere
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_castamere_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_castamere_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Reyne
-				}
-			}
-		}
-	}
-
-	agot_headgear_crown_of_sharp_point_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_sharp_point
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_sharp_point_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_sharp_point_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Bar_Emmon
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_the_tides_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_tides
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_tides_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_tides_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Velaryon
-				}
-			}
-		}
-	}
-	
-	agot_headgear_dead_crown_of_gardener_peace_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_gardener_peace
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 241
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Gardener
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_gardener_peace_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_gardener_peace
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Gardener
-					days_of_continuous_peace >= 0
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_gardener_war_bronze_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_gardener_war_bronze
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_war_bronze_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_gardener_war_iron_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_gardener_war_iron
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_war_iron_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 255
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_war_iron_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Gardener
-					days_of_continuous_war >= 1
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_mudd_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_mudd
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_mudd_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_mudd_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					dynasty ?= dynasty:dynn_Mudd
-				}
-			}
-		}
-	}
-
-	agot_headgear_crown_of_the_grey_king_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_grey_king
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-
-	agot_headgear_crown_of_the_grey_king_rusted_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_grey_king_rusted
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_rusted_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 240
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_rusted_artifact }}
-				this = character:Grey_King_2 # The Grey King
-			}
-		}
-	}
-
-	agot_headgear_crown_of_the_nights_king_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_nights_king
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_nights_king_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 240
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_nights_king_artifact }}
-				this = character:Stark_13 # The Night's King
-			}
-		}
-	}
-
-	agot_headgear_crown_of_true_winter_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_true_winter
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_true_winter_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_the_old_gods_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_old_gods
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_old_gods_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_the_seven_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_the_seven
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_seven_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_rhllor_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_rhllor
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_rhllor_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_circlet_of_rhllor_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = circlet_of_rhllor
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_of_rhllor_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-	
-	agot_headgear_crown_of_winter_roses_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_winter_roses
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 290
-				is_crowns_westeros_loaded_trigger = yes
-				this = character:Stark_5 # Lyanna Stark
-			}
-		}
-	}
-
-	agot_headgear_crown_of_jon_north_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_jon_north
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jon_north_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-
-	agot_headgear_crown_of_jon_icefire_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_jon_icefire
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jon_icefire_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-		}
-	}
-
-	agot_headgear_crown_of_jeyne_westerling_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = crown_of_jeyne_westerling
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jeyne_westerling_artifact }
-					agot_is_independent_ruler = yes
-				}
-			}
-			modifier = {
-				add = 270
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_jeyne_westerling_artifact }}
-				AND = {
-					OR = {
-						primary_title.tier = tier_empire
-						AND = {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_empire
-						}
-						primary_spouse ?= {
-							primary_title.tier = tier_kingdom
-							agot_is_independent_ruler = yes
-						}
-					}
-					this = character:Westerling_2 # Jeyne Westerling
-					is_spouse_of_even_if_dead = character:Stark_6 # Robb Stark
-				}
-			}
-		}
-	}
-
 	agot_headgear_mockingbird_circlet_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -7627,5 +7562,122 @@ headgear_base = {
 				}
 			}
 		}
-	}	
+	}
+	
+	
+	# LOTD
+	aegon_headgear_01 = {
+		dna_modifiers = {
+			accessory = {
+			mode = add
+				gene = headgear
+				template = aegon_crown_gems
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
+			}
+			modifier = {
+				add = 600
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown } }
+				AND = {
+					has_game_rule = hotd_visuals
+					#primary_title = title:e_the_iron_throne
+					OR = {
+						this = character:Targaryen_27 # Aegon I
+						# this = character:Targaryen_30 # Aenys I
+						this = character:Targaryen_31 # Maegor I
+						this = character:Targaryen_65 # Aegon II
+						this = character:Targaryen_81 # Daeron I
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_equipped_character_artifact = {
+					artifact_slot_type = helmet
+						has_variable = aegoncrown_nogems
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_lotd_loaded_trigger = yes }
+			}
+		}
+
+	# Crowns of the Iron Throne
+	aegon_headgear_02 = {
+		dna_modifiers = {
+			accessory = {
+			mode = add
+				gene = headgear
+				template = aegon_crown_no_gems
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown_nogems }
+			}
+			modifier = {
+				factor = 0
+				any_equipped_character_artifact = {
+					artifact_slot_type = helmet
+						agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
+						NOT = { has_variable = aegoncrown_nogems }
+					}
+				}
+			modifier = {
+				factor = 0
+				NOT =  { is_lotd_loaded_trigger = yes }
+			}
+			}
+		}
+
+	viserys_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = viserys_crown
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 301
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_jaehaerys_artifact }
+			}
+			modifier = {
+				add = 500
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_jaehaerys_artifact } }
+				AND = {
+					#primary_title = title:e_the_iron_throne
+					OR = {
+						this = character:Targaryen_35 # Jaehaerys I
+						this = character:Targaryen_60 # Viserys I
+						this = character:Targaryen_63 # Rhaenyra
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_lotd_loaded_trigger = yes }
+			}
+			modifier = {
+				factor = 0
+				NOT =  { has_game_rule = hotd_visuals }
+			}
+		}
+	}
+
 }

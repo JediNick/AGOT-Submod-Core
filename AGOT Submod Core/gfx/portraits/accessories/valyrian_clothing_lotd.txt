@@ -1,0 +1,24 @@
+male_clothes_secular_valyrian_nobility_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso }
+}
+
+male_clothes_secular_valyrian_nobility_01_high_dyn = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso }
+}
+
+female_clothes_secular_valyrian_dress_01_high = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso }
+}
+
+female_clothes_secular_valyrian_dress_01_high_dyn = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso }
+}
+
+female_clothes_secular_valyrian_dress_02_high_dyn = {
+	set_tags = "shrink_arms,shrink_chest,shrink_belly"
+	entity = { required_tags = ""		shared_pose_entity = torso }
+}

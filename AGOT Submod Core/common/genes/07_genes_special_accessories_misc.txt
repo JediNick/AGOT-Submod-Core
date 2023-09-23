@@ -366,17 +366,17 @@ special_genes = {
 				girl = female
 			}
 			
-			# valyrian_nobility_legwear = {
-			# 	index = 91
-			# 	male = {
-			# 		1 = male_legwear_valyrian_nobility_01
-			# 	}
-			# 	female = {
-			# 		1 = female_legwear_secular_western_common_01
-			# 	}
-			# 	boy = male
-			# 	girl = female
-			# }
+			valyrian_nobility_legwear = {
+				index = 91
+				male = {
+					1 = male_legwear_valyrian_nobility_01
+				}
+				female = {
+					1 = female_legwear_secular_western_common_01
+				}
+				boy = male
+				girl = female
+			}
 		}
 
 		special_legwear = {
@@ -584,18 +584,7 @@ special_genes = {
 				girl = female
 			}
 
-			#AGOT Added
-			it_handchain = {
-				index = 13
-				male = {
-					1 = it_male_handchain
-				}
-				female = {
-					1 = it_male_handchain
-				}
-				boy = male
-				girl = female
-			}
+			#AGOT use index 13 for next accessory
 			
 			male_cloaks_secular_shouldercape_01 = {
 				index = 14

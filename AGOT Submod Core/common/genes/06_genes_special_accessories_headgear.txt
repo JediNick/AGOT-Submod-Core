@@ -2331,30 +2331,45 @@ special_genes = {
 			}
 
 			#AGOT Added
-			red_priest_necklace_sphere = {
+			agot_crowns = {
 				index = 146
 				male = {
-					1 = red_priest_necklace_sphere_01
+					1 = crown_of_westerling
+					1 = crown_of_the_tides
+					1 = crown_of_gardener_peace
+					1 = crown_of_gardener_war_iron
+					1 = crown_of_mudd
+					1 = crown_of_the_grey_king_rusted
+					1 = crown_of_the_nights_king
+					1 = crown_of_true_winter
+					1 = crown_of_the_wall
+					1 = crown_of_rhllor
+					1 = circlet_of_rhllor
+					1 = crown_of_jeyne_westerling
+					1 = crown_of_winter_roses
+					
 				}
 				female = {
-					1 = red_priest_necklace_sphere_01
+					1 = female_crown_of_westerling
+					1 = female_crown_of_the_tides
+					1 = female_crown_of_gardener_peace
+					1 = female_crown_of_gardener_war_iron
+					1 = female_crown_of_mudd
+					1 = female_crown_of_the_grey_king_rusted
+					1 = female_crown_of_the_nights_king
+					1 = female_crown_of_true_winter
+					1 = female_crown_of_the_wall
+					1 = female_crown_of_rhllor
+					1 = female_circlet_of_rhllor
+					1 = female_crown_of_jeyne_westerling
+					1 = female_crown_of_winter_roses
 				}
 				boy = male
 				girl = female
-			}
+			}	
 
-			#AGOT Added
-			red_priest_necklace_square = {
-				index = 147
-				male = {
-					1 = red_priest_necklace_square_01
-				}
-				female = {
-					1 = red_priest_necklace_square_01
-				}
-				boy = male
-				girl = female
-			}
+			##TODO: 
+			##USE 147 if able
 
 			#AGOT Added
 			westerlands_war = {
@@ -2897,7 +2912,7 @@ special_genes = {
 				girl = female
 			}
 			
-			#New Westeros Crowns
+			#AGOT Added
 			rhaella_crown = {
 				index = 190
 				male = {
@@ -2909,7 +2924,8 @@ special_genes = {
 				boy = male
 				girl = female
 			}
-			#New Westeros Crowns
+			
+			#AGOT Added
 			visenya_circlet = {
 				index = 191
 				male = {
@@ -3147,57 +3163,42 @@ special_genes = {
 				girl = female
 			}
 			
+			aegon_crown_gems = { # For commoners to use, non-gilded version only
+				index = 201
+				male = {
+					1 = male_aegoncrown_01
+				}
+				female = {
+					1 = female_aegoncrown_01	
+				}
 
-			##Legacy of the dragon TODO:
-			# aegon_crown_gems = { # For commoners to use, non-gilded version only
-			# 	index = 201
-			# 	male = {
-			# 		1 = male_aegoncrown_01
-			# 	}
-			# 	female = {
-			# 		1 = female_aegoncrown_01	
-			# 	}
+				boy = male
+				girl = female
+			}
+			aegon_crown_no_gems = { # For commoners to use, non-gilded version only
+				index = 202
+				male = {
+					1 = male_aegoncrown_02
+				}
+				female = {
+					1 = female_aegoncrown_02	
+				}
 
-			# 	boy = male
-			# 	girl = female
-			# }
-			# aegon_crown_no_gems = { # For commoners to use, non-gilded version only
-			# 	index = 202
-			# 	male = {
-			# 		1 = male_aegoncrown_02
-			# 	}
-			# 	female = {
-			# 		1 = female_aegoncrown_02	
-			# 	}
+				boy = male
+				girl = female
+			}
+			viserys_crown = {
+				index = 204
+				male = {
+					1 = male_viserys_crown_01
+				}
+				female = {
+					1 = female_viserys_crown_01	
+				}
 
-			# 	boy = male
-			# 	girl = female
-			# }
-			# visenya_circlet = {
-			# 	index = 203
-			# 	male = {
-			# 		1 = empty
-			# 	}
-			# 	female = {
-			# 		1 = female_visenya_circlet_01 ## GOOD	
-			# 	}
-
-			# 	boy = male
-			# 	girl = female
-			# }
-			
-			# viserys_crown = {
-			# 	index = 204
-			# 	male = {
-			# 		1 = male_viserys_crown_01
-			# 	}
-			# 	female = {
-			# 		1 = female_viserys_crown_01	
-			# 	}
-
-			# 	boy = male
-			# 	girl = female
-			# }
+				boy = male
+				girl = female
+			}
 		}
 
 

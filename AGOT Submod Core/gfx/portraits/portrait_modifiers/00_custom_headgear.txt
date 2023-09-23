@@ -844,6 +844,16 @@
 
 	add_accessory_modifiers = {
 		gene = headgear
+		template = visenya_circlet
+	}
+
+	add_accessory_modifiers = {
+		gene = headgear
+		template = rhaella_crown
+	}
+
+	add_accessory_modifiers = {
+		gene = headgear
 		template = beyondthewall_crown
 	}
 
@@ -1097,6 +1107,11 @@
 		template = male_headgear_grandmaester_chain
 	}
 	
+	add_accessory_modifiers = {
+		gene = headgear
+		template = agot_crowns
+	}
+	
 	##Crowns of Westeros
 	add_accessory_modifiers = {
 		gene = headgear
@@ -1137,5 +1152,30 @@
 			is_aotk_loaded_trigger = yes
 		}
 		template = KG_war_common
+	}
+
+	##LOTD
+	add_accessory_modifiers = {
+		gene = headgear
+		is_valid_custom = {
+			is_lotd_loaded_trigger = yes
+		}
+		template = aegon_crown_gems
+	}
+
+	add_accessory_modifiers = {
+		gene = headgear
+		is_valid_custom = {
+			is_lotd_loaded_trigger = yes
+		}
+		template = aegon_crown_no_gems
+	}
+
+	add_accessory_modifiers = {
+		gene = headgear
+		is_valid_custom = {
+			is_lotd_loaded_trigger = yes
+		}
+		template = viserys_crown
 	}
 }

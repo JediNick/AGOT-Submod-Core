@@ -152,4 +152,12 @@
 		}
 		template = kingsguard_legwear_01
 	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			is_lotd_loaded_trigger = yes
+		}
+		template = valyrian_nobility_legwear
+	}
 }

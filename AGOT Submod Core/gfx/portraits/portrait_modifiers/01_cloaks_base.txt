@@ -1042,29 +1042,6 @@ cloaks = {
 		}
 	 }
 	
-
-	agot_it_handchain = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = cloaks
-				template = it_handchain
-				value = 1
-			}
-		}
-
-		weight = {
-			base = 0
-			modifier = {
-				add = 480
-				has_council_position = councillor_castellan
-				liege_or_court_owner = {
-					has_title = title:e_the_iron_throne
-				}
-			}
-		}
-	}
-	
 	agot_cloak_goldcloak = {
         dna_modifiers = {
             accessory = {

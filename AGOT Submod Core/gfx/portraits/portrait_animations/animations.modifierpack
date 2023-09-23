@@ -685,6 +685,17 @@ one_handed_sword = {
         animations = fat_additive
         animations = dwarf_additive
     }
+    portrait_modifier = {
+        trigger = {
+            any_equipped_character_artifact = {
+                has_variable = bobby_hammer_artifact
+            }
+        }
+        animations_props = agot_artifact_weapon_bobbyhammer
+        animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+    }
 	
 	#Default Fallbacks!
 	portrait_modifier = {
@@ -1105,7 +1116,9 @@ council_spymaster = {
         trigger = {	
             AND = {
                 has_dlc_feature = the_northern_lords
-                culture = culture:norse 
+                #AGOT Modified
+                #culture = culture:norse 
+                culture = { agot_is_wildling_culture = yes }
             }				
         }						
         animations_props = spymaster_fp1_prop
@@ -1537,6 +1550,15 @@ council_marshal = {
             }
         }
         animations_props = agot_artifact_weapon_evergold
+        animations = council_marshal_decal
+    }
+    portrait_modifier = {
+        trigger = {
+            any_equipped_character_artifact = {
+                has_variable = bobby_hammer_artifact
+            }
+        }
+        animations_props = agot_artifact_weapon_bobbyhammer
         animations = council_marshal_decal
     }
     #AGOT Ended
@@ -2157,6 +2179,15 @@ throneRoom_one_handed_passive_1 = {
         animations_props = agot_artifact_weapon_evergold
         animations = council_marshal_decal
     }
+    portrait_modifier = {
+        trigger = {
+            any_equipped_character_artifact = {
+                has_variable = bobby_hammer_artifact
+            }
+        }
+        animations_props = agot_artifact_weapon_bobbyhammer
+        animations = council_marshal_decal
+    }
     #AGOT End
 
     portrait_modifier = { # Equipped
@@ -2707,6 +2738,15 @@ throneRoom_one_handed_passive_2 = {
         animations_props = agot_artifact_weapon_evergold
         animations = council_marshal_decal
     }
+    portrait_modifier = {
+        trigger = {
+            any_equipped_character_artifact = {
+                has_variable = bobby_hammer_artifact
+            }
+        }
+        animations_props = agot_artifact_weapon_bobbyhammer
+        animations = council_marshal_decal
+    }
     #AGOT End
 
     portrait_modifier = { # Equipped
@@ -2819,7 +2859,7 @@ throneRoom_two_handed_passive_1 = {
 	    trigger = {
 			culture = { has_cultural_pillar = heritage_rhoynish }
         }
-		animations_props = artifact_dornish_spear_equipped_prop
+		animations_props = artifact_dornish_spear_prop
 		animations = council_marshal_decal
 	}
 

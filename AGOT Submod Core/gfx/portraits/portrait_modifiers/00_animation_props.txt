@@ -2286,4 +2286,137 @@
 			}
 		}	
 	}
+
+	##Lotd
+	artifact_blackfyre_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = blackfyre_prop
+				value = 1.0
+			}
+		}	
+	}
+	
+	artifact_darksister_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = darksister_prop
+				value = 1.0
+			}
+		}	
+	}
+
+	artifact_seafoam_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = seafoam_prop
+				value = 1.0
+			}
+		}	
+	}
+
+	artifact_aegon_dagger_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = aegon_dagger_prop
+				value = 0.3
+			}
+		}	
+	}
+
+	artifact_aegon_dagger_equipped_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = aegon_dagger_prop
+				value = 0.7
+			}
+		}	
+	}
+
+	artifact_subterfuge_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = subterfuge_prop
+				value = 1.0
+			}
+		}	
+	}
+
+	artifact_calamity_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = calamity_prop
+				value = 0.15
+			}
+		}	
+	}
+
+	artifact_calamity_equipped_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = calamity_prop
+				value = 0.5
+			}
+		}	
+	}
+
+	artifact_calamity_flipped_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = calamity_prop
+				value = 0.85
+			}
+		}	
+	}
+
+	artifact_orys_hammer_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = orys_hammer_prop
+				value = 0.15
+			}
+		}	
+	}
+
+	artifact_orys_hammer_equipped_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = orys_hammer_prop
+				value = 0.5
+			}
+		}	
+	}
+
+	artifact_orys_hammer_flipped_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = orys_hammer_prop
+				value = 0.85
+			}
+		}	
+	}
 }

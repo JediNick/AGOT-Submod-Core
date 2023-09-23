@@ -210,9 +210,173 @@
 			}
 		}
 	}
-
-
-kingsguard_headgear_01 = {
+	
+	#AGOT Added
+	agot_headgear_kingsguard = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = Kingsguard_Helm_1
+				value = 1
+			}
+			morph = {
+				mode = add
+				gene = gene_bs_ear_outward
+				template = ear_outward_neg
+				value = 1
+			}
+			morph = {
+				mode = modify
+				gene = gene_chin_forward
+				template = chin_forward_neg
+				value = -1
+			}
+			morph = {
+				mode = modify
+				gene = gene_jaw_forward
+				template = jaw_forward_pos
+				value = -1
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				AND = {
+					has_trait = kingsguard
+					portrait_wear_armor_trigger = yes
+					portrait_wear_helmet_trigger = yes
+					NOT = { has_game_rule = show_armor_enabled }
+				}
+			}
+		}
+	}
+	agot_headgear_silent_sister = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era3_common 
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				has_trait = silent_sister
+			}
+		}
+	}
+	agot_maester_chain_1_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_1
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				has_trait = maester
+				age > 15
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}
+	agot_maester_chain_2_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_2
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 510
+				has_trait = maester
+				learning >= 10
+				age >= 25
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}	
+	agot_maester_chain_3_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_3
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 520
+				has_trait = maester
+				learning >= 18
+				age >= 30
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}	
+	agot_maester_chain_4_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_maester_chain_4
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 530
+				has_trait = maester
+				learning >= 25
+				age >= 40
+				NOT = { employer ?= title:e_the_iron_throne.holder }
+			}
+		}
+	}	
+	agot_grandmaester_chain_headgear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = male_headgear_grandmaester_chain
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_trait = maester
+				AND = {
+					exists = title:e_the_iron_throne.holder
+					employer ?= title:e_the_iron_throne.holder
+				}
+			}
+		}
+	}
+	
+	kingsguard_headgear_01 = {
 	    dna_modifiers = {
 			morph = {
 				mode = add
@@ -432,154 +596,6 @@ kingsguard_headgear_01 = {
 					should_be_naked_trigger = yes
 				}
 			}			
-		}
-	}
-	
-	#AGOT Added
-	agot_headgear_kingsguard = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = Kingsguard_Helm_1
-				value = 1
-			}
-			morph = {
-				mode = add
-				gene = gene_bs_ear_outward
-				template = ear_outward_neg
-				value = 1
-			}
-			morph = {
-				mode = modify
-				gene = gene_chin_forward
-				template = chin_forward_neg
-				value = -1
-			}
-			morph = {
-				mode = modify
-				gene = gene_jaw_forward
-				template = jaw_forward_pos
-				value = -1
-			}
-			morph = {
-				mode = modify_multiply
-				gene = gene_bs_nose_forward
-				template = nose_forward_neg
-				value = 1
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 500
-				AND = {
-					has_trait = kingsguard
-					portrait_wear_armor_trigger = yes
-					portrait_wear_helmet_trigger = yes
-					NOT = { has_game_rule = show_armor_enabled }
-				}
-			}
-		}
-	}
-	agot_maester_chain_1_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = male_headgear_maester_chain_1
-				value = 1
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 500
-				has_trait = maester
-				age > 15
-				NOT = { employer ?= title:e_the_iron_throne.holder }
-			}
-		}
-	}
-	agot_maester_chain_2_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = male_headgear_maester_chain_2
-				value = 1
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 510
-				has_trait = maester
-				learning >= 10
-				age >= 25
-				NOT = { employer ?= title:e_the_iron_throne.holder }
-			}
-		}
-	}	
-	agot_maester_chain_3_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = male_headgear_maester_chain_3
-				value = 1
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 520
-				has_trait = maester
-				learning >= 18
-				age >= 30
-				NOT = { employer ?= title:e_the_iron_throne.holder }
-			}
-		}
-	}	
-	agot_maester_chain_4_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = male_headgear_maester_chain_4
-				value = 1
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 530
-				has_trait = maester
-				learning >= 25
-				age >= 40
-				NOT = { employer ?= title:e_the_iron_throne.holder }
-			}
-		}
-	}	
-	agot_grandmaester_chain_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = male_headgear_grandmaester_chain
-				value = 1
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 1000
-				has_trait = maester
-				AND = {
-					exists = title:e_the_iron_throne.holder
-					employer ?= title:e_the_iron_throne.holder
-				}
-			}
 		}
 	}
 
