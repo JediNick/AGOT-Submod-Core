@@ -3724,8 +3724,33 @@ headgear_base = {
 			}
 		}
 	}
-
-		agot_headgear_rhaella_crown = {
+	
+	agot_headgear_shieraseastar_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = shieraseastar_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }
+			}
+			modifier = {
+				add = 240
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }}
+				agot_is_independent_ruler = yes
+			}
+		}
+	}
+	
+	agot_headgear_rhaella_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
