@@ -666,6 +666,16 @@ female_crown_of_jeyne_westerling = {
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
 }
 
+crown_of_bloodraven = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+
+female_crown_of_bloodraven = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
+}
+
 mockingbird_circlet = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
