@@ -294,6 +294,14 @@ female_daenerys_daughterofjaehaerys_crown = {
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
+shieraseastar_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_shieraseastar_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
 garlandgardener_crown = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
