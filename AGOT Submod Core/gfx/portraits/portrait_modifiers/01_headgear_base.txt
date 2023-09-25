@@ -3725,6 +3725,50 @@ headgear_base = {
 		}
 	}
 	
+	agot_headgear_shieraseastar_crown_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = shieraseastar_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					this = character:Targaryen_97 # Shiera Seastar
+				}
+			}
+		}
+	}
+	
 	agot_headgear_shieraseastar_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -3740,12 +3784,6 @@ headgear_base = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }
-			}
-			modifier = {
-				add = 240
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }}
-				agot_is_independent_ruler = yes
 			}
 		}
 	}
