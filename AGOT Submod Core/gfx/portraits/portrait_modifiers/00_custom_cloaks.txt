@@ -87,11 +87,6 @@
 
 	add_accessory_modifiers = {
 		gene = cloaks
-		template = it_handchain
-	}
-	
-	add_accessory_modifiers = {
-		gene = cloaks
 		is_valid_custom = {
 			has_ep1_dlc_trigger = yes
 		}
