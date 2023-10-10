@@ -684,6 +684,16 @@ female_crown_of_bloodraven = {
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
 }
 
+circlet_of_seastar = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+
+female_circlet_of_seastar = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
+}
+
 mockingbird_circlet = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	

@@ -7346,6 +7346,28 @@ headgear_base = {
 		}
 	}
 
+		agot_headgear_circlet_of_seastar_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = circlet_of_seastar
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_of_seastar_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+
 	agot_headgear_mockingbird_circlet_crown = {
 		dna_modifiers = {
 			accessory = {
