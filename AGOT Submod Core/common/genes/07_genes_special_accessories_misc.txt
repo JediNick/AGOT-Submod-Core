@@ -187,7 +187,7 @@ special_genes = {
 					1 = male_legwear_secular_valyrian_war_03
 				}
 				female = {
-					0 = female_legwear_secular_ep1_jester_01
+					0 = female_legwear_secular_western_war_01
 				}
 				boy = male
 				girl = female
@@ -223,7 +223,7 @@ special_genes = {
 					1 = male_legwear_secular_ironborn_war_03
 				}
 				female = {
-					0 = female_legwear_secular_ep1_jester_01
+					0 = female_legwear_secular_western_war_01
 				}
 				boy = male
 				girl = female
@@ -303,51 +303,21 @@ special_genes = {
 					1 = male_legwear_secular_valyrian_war_04
 				}
 				female = {
-					0 = female_legwear_secular_ep1_jester_01
+					0 = female_legwear_secular_western_war_01
 				}
 				boy = male
 				girl = female
 			}
-			male_legwear_maester_skirt_01 = {
+			maester_legwear = {
 				index = 24
 				male = {
 					1 = male_legwear_maester_skirt_01
-				}
-				female = {
-					0 = female_legwear_secular_ep1_jester_01
-				}
-				boy = male
-				girl = female
-			}
-			male_legwear_northernmaester_skirt_01 = {
-				index = 25
-				male = {
 					1 = male_legwear_northernmaester_skirt_01
-				}
-				female = {
-					0 = female_legwear_secular_ep1_jester_01
-				}
-				boy = male
-				girl = female
-			}
-			male_legwear_grandmaester_skirt_01 = {
-				index = 26
-				male = {
 					1 = male_legwear_grandmaester_skirt_01
-				}
-				female = {
-					0 = female_legwear_secular_ep1_jester_01
-				}
-				boy = male
-				girl = female
-			}
-			male_legwear_maester_kw_skirt_01 = {
-				index = 27
-				male = {
 					1 = male_legwear_maester_kw_skirt_01
 				}
 				female = {
-					0 = female_legwear_secular_ep1_jester_01
+					1 = empty
 				}
 				boy = male
 				girl = female

@@ -1084,31 +1084,6 @@
 	
 	add_accessory_modifiers = {
 		gene = headgear
-		template = male_headgear_maester_chain_1
-	}
-	
-	add_accessory_modifiers = {
-		gene = headgear
-		template = male_headgear_maester_chain_2
-	}
-	
-	add_accessory_modifiers = {
-		gene = headgear
-		template = male_headgear_maester_chain_3
-	}
-	
-	add_accessory_modifiers = {
-		gene = headgear
-		template = male_headgear_maester_chain_4
-	}
-	
-	add_accessory_modifiers = {
-		gene = headgear
-		template = male_headgear_grandmaester_chain
-	}
-	
-	add_accessory_modifiers = {
-		gene = headgear
 		template = agot_crowns
 	}
 	

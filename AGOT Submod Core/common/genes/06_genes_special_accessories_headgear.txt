@@ -2852,69 +2852,10 @@ special_genes = {
 				girl = female
 			}
 			
-			male_headgear_maester_chain_1 = {
-				index = 185
-				male = {
-					1 = male_headgear_maester_chain_1
-				}
-				female = {
-					1 = female_headgear_secular_western_royalty_01
-				}
-				boy = male
-				girl = female
-			}
-			
-			male_headgear_maester_chain_2 = {
-				index = 186
-				male = {
-					1 = male_headgear_maester_chain_2
-				}
-				female = {
-					1 = female_headgear_secular_western_royalty_01
-				}
-				boy = male
-				girl = female
-			}
-			
-			male_headgear_maester_chain_3 = {
-				index = 187
-				male = {
-					1 = male_headgear_maester_chain_3
-				}
-				female = {
-					1 = female_headgear_secular_western_royalty_01
-				}
-				boy = male
-				girl = female
-			}
-			
-			male_headgear_maester_chain_4 = {
-				index = 188
-				male = {
-					1 = male_headgear_maester_chain_4
-				}
-				female = {
-					1 = female_headgear_secular_western_royalty_01
-				}
-				boy = male
-				girl = female
-			}
-			
-			male_headgear_grandmaester_chain = {
-				index = 189
-				male = {
-					1 = male_headgear_grandmaester_chain
-				}
-				female = {
-					1 = female_headgear_secular_western_royalty_01
-				}
-				boy = male
-				girl = female
-			}
 			
 			#AGOT Added
 			rhaella_crown = {
-				index = 190
+				index = 185
 				male = {
 					1 = rhaellacrown
 				}
@@ -2927,7 +2868,7 @@ special_genes = {
 			
 			#AGOT Added
 			visenya_circlet = {
-				index = 191
+				index = 186
 				male = {
 					1 = visenya_circlet
 				}
@@ -3009,7 +2950,6 @@ special_genes = {
 					1 = crown_of_jon_north
 					1 = crown_of_jon_icefire
 					1 = crown_of_bloodraven
-					1 = circlet_of_seastar
 					1 = mockingbird_circlet
 					1 = crown_of_sansa
 					1 = crown_of_cersei_ruler
@@ -3087,7 +3027,6 @@ special_genes = {
 					1 = female_crown_of_jon_north
 					1 = female_crown_of_jon_icefire
 					1 = female_crown_of_bloodraven
-					1 = female_circlet_of_seastar
 					1 = female_mockingbird_circlet
 					1 = female_crown_of_sansa
 					1 = female_crown_of_cersei_ruler

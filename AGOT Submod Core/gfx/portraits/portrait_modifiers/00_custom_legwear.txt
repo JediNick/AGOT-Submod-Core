@@ -60,22 +60,7 @@
 	#AGOT Added, Specific Clothes
 	add_accessory_modifiers = {
 		gene = legwear
-		template = male_legwear_maester_skirt_01
-	}
-	
-	add_accessory_modifiers = {
-		gene = legwear
-		template = male_legwear_northernmaester_skirt_01
-	}
-	
-	add_accessory_modifiers = {
-		gene = legwear
-		template = male_legwear_maester_kw_skirt_01
-	}
-	
-	add_accessory_modifiers = {
-		gene = legwear
-		template = male_legwear_grandmaester_skirt_01
+		template = maester_legwear
 	}
 
 	#AGOT Added, Generic Armor

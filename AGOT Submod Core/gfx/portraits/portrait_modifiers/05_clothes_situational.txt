@@ -379,19 +379,19 @@
     }
 
     # Maester
-    agot_clothing_maester = {
+    agot_clothing_southern_maester = {
         dna_modifiers = {
             accessory = {
                 mode = add
                 gene = clothes
-                template = southernmaester_clothes
-                value = 1
+                template = maester_clothes
+                accessory = male_clothes_southern_maester_01
             }
             accessory = {
                 mode = add
                 gene = legwear
-                template = male_legwear_maester_skirt_01
-                value = 1
+                template = maester_legwear
+                accessory = male_legwear_maester_skirt_01
             }
             morph = {
                 mode = modify_multiply
@@ -404,13 +404,18 @@
             base = 0
             modifier = {
                 add = 200
+                is_female = no
+                AND = {
                 OR = {
                     has_trait = maester
                     # has_trait = archmaester 
                 }
-                portrait_northern_clothing_trigger = no
+                    OR = {
                 portrait_ironborn_clothing_trigger = no
+                        portrait_the_north_clothing_trigger = no
                 portrait_valeman_clothing_trigger = no
+                    }
+                }
                 NOT = { employer ?= title:e_the_iron_throne.holder }
             }
         }
@@ -421,14 +426,14 @@
             accessory = {
                 mode = add
                 gene = clothes
-                template = northernmaester_clothes
-                value = 1
+                template = maester_clothes
+                accessory = male_clothes_northern_maester_01
             }
             accessory = {
                 mode = add
                 gene = legwear
-                template = male_legwear_northernmaester_skirt_01
-                value = 1
+                template = maester_legwear
+                accessory = male_legwear_northernmaester_skirt_01
             }
             morph = {
                 mode = modify_multiply
@@ -441,6 +446,7 @@
             base = 0
             modifier = {
                 add = 200
+                is_female = no
                 AND = {
                     OR = {
                         has_trait = maester
@@ -462,14 +468,14 @@
             accessory = {
                 mode = add
                 gene = clothes
-                template = maester_kw_clothes
-                value = 1
+                template = maester_clothes
+                accessory = male_clothes_maester_kw_01
             }
             accessory = {
                 mode = add
                 gene = legwear
-                template = male_legwear_maester_kw_skirt_01
-                value = 1
+                template = maester_legwear
+                accessory = male_legwear_maester_kw_skirt_01
             }
             morph = {
                 mode = modify_multiply
@@ -482,6 +488,7 @@
             base = 0
             modifier = {
                 add = 200
+                is_female = no
                 AND = {
                     OR = {
                         has_trait = maester
@@ -499,14 +506,14 @@
             accessory = {
                 mode = add
                 gene = clothes
-                template = grandmaester_clothes
-                value = 1
+                template = maester_clothes
+                accessory = male_clothes_grandmaester_01
             }
             accessory = {
                 mode = add
                 gene = legwear
-                template = male_legwear_grandmaester_skirt_01
-                value = 1
+                template = maester_legwear
+                accessory = male_legwear_grandmaester_skirt_01
             }
             morph = {
                 mode = modify_multiply
@@ -519,6 +526,7 @@
             base = 0
             modifier = {
                 add = 200
+                is_female = no
                 OR = {
                     has_trait = maester
                     # has_trait = archmaester 

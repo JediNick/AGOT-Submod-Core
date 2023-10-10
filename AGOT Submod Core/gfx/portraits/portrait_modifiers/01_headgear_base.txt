@@ -3150,7 +3150,7 @@ headgear_base = {
 							agot_is_independent_ruler = yes
 						}
 					}
-					dynasty ?= dynasty:dynn_Arryn
+					culture = culture:valeman
 				}
 			}
 		}

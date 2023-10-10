@@ -569,22 +569,7 @@
 	
 	add_accessory_modifiers = {
 		gene = clothes
-		template = southernmaester_clothes
-	}
-	
-	add_accessory_modifiers = {
-		gene = clothes
-		template = northernmaester_clothes
-	}
-	
-	add_accessory_modifiers = {
-		gene = clothes
-		template = maester_kw_clothes
-	}
-	
-	add_accessory_modifiers = {
-		gene = clothes
-		template = grandmaester_clothes
+		template = maester_clothes
 	}
 
 	add_accessory_modifiers = {

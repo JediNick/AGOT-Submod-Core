@@ -2272,23 +2272,8 @@ special_genes = {
 			}
 
 			#AGOT Added
-			southernmaester_clothes = {
-				index = 115
-
-				male = {
-					1 = male_clothes_southern_maester_01
-				}
-				female = {
-					1 = female_clothes_secular_byzantine_war_nobility_01_low
-					
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
 			religious_fot7_high_clothes = {
-				index = 116
+				index = 115
 
 				male = {
 					1 = male_clothes_religious_orthodox_high_01
@@ -2302,7 +2287,7 @@ special_genes = {
 
 			#AGOT Added
 			religious_fot7_low_clothes = {
-				index = 117
+				index = 116
 
 				male = {
 					1 = male_clothes_religious_zoroastrian_high_01
@@ -2316,7 +2301,7 @@ special_genes = {
 
 			#AGOT Added
 			religious_fot7_devoted_clothes = {
-				index = 118
+				index = 117
 
 				male = {
 					1 = male_clothes_religious_catholic_devoted_02
@@ -2329,45 +2314,17 @@ special_genes = {
 			}
 			
 			#AGOT Added
-			northernmaester_clothes = {
-				index = 119
+			maester_clothes = {
+				index = 118
 
 				male = {
+					1 = male_clothes_southern_maester_01
 					1 = male_clothes_northern_maester_01
-				}
-				female = {
-					1 = female_clothes_secular_byzantine_war_nobility_01_low
-					
-				}
-				boy = male
-				girl = female
-			}
-			
-			#AGOT Added
-			maester_kw_clothes = {
-				index = 120
-
-				male = {
 					1 = male_clothes_maester_kw_01
-				}
-				female = {
-					1 = female_clothes_secular_byzantine_war_nobility_01_low
-					
-				}
-				boy = male
-				girl = female
-			}
-			
-			#AGOT Added
-			grandmaester_clothes = {
-				index = 121
-
-				male = {
 					1 = male_clothes_grandmaester_01
 				}
 				female = {
-					1 = female_clothes_secular_byzantine_war_nobility_01_low
-					
+					1 = female_clothes_religious_catholic_devoted_01_common
 				}
 				boy = male
 				girl = female
@@ -2375,10 +2332,10 @@ special_genes = {
 			
 			#AGOT Added
 			silentsister_clothes = {
-				index = 122
+				index = 119
 
 				male = {
-					1 = male_clothes_southern_maester_01
+					1 = male_clothes_religious_catholic_devoted_01
 				}
 				female = {
 					1 = female_clothes_religious_zoroastrian_high_01
