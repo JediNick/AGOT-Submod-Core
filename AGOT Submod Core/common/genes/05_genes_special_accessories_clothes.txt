@@ -2345,10 +2345,70 @@ special_genes = {
 				girl = female
 			}
 			
+			unlikely_gown_clothes = {
+				index = 120
+
+				male = {
+					1 = male_clothes_secular_unlikely_gown_01
+				}
+				female = {
+					1 = female_clothes_secular_unlikely_gown_01
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			unlikely_gown_royal_clothes = {
+				index = 121
+
+				male = {
+					1 = male_clothes_secular_unlikely_gown_royal_01
+				}
+				female = {
+					1 = female_clothes_secular_unlikely_gown_royal_01
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			dragonbane_doublet_clothes = {
+				index = 122
+
+				male = {
+					1 = male_clothes_dragonbane_doublet_01
+					1 = male_clothes_dragonbane_doublet_03
+					1 = male_clothes_dragonbane_doublet_no_necklace_01
+					1 = male_clothes_dragonbane_doublet_no_necklace_02
+				}
+				female = {
+					1 = female_clothes_secular_unlikely_gown_01
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			agot_historic_characters = {
+				index = 123
+
+				male = {
+					1 = male_clothes_dragonbane_doublet_02
+					1 = male_clothes_dragonbane_doublet_04
+					1 = male_clothes_secular_unlikely_gown_02
+				}
+				female = {
+					1 = female_clothes_religious_catholic_devoted_01_common
+				}
+				boy = male
+				girl = female
+			}
+			
 
 			#NOTAGOTADDED
 			kingsguard_armor_clothes = {
-				index = 200
+				index = 201
 
 				male = {
 					1 = male_clothes_secular_western_KG_armor_01
@@ -2371,7 +2431,7 @@ special_genes = {
 			}
 
 			valyrian_nobility_clothing = {
-				index = 201
+				index = 202
 
 				male = {
 					1 = male_clothes_secular_valyrian_nobility_01_high
@@ -2386,7 +2446,7 @@ special_genes = {
 			}
 
 			valyrian_nobility_clothing_dyn = {
-				index = 202
+				index = 203
 
 				male = {
 					1 = male_clothes_secular_valyrian_nobility_01_high_dyn
