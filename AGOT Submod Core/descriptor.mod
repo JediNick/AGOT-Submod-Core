@@ -6,5 +6,5 @@ tags={
 name="AGOT Submod Core"
 picture="thumbnail.png"
 supported_version="1.10.*"
-path="C:/Users/nsalv/Documents/Paradox Interactive/Crusader Kings III/mod/AGOT Submod Core"
+path="LOCAL PATH"
 remote_file_id="3034473189"
