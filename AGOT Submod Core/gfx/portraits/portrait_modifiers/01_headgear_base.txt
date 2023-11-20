@@ -2570,7 +2570,10 @@ headgear_base = {
 			base = 0
 			modifier = {
 				add = 300
-				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_baelor_artifact }
+				OR = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_baelor_artifact }
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_qolab_baelor_artifact }
+				}
 			}
 			modifier = {
 				add = 240
@@ -3969,6 +3972,215 @@ headgear_base = {
 			}
 		}
 	}
+	
+	agot_headgear_crown_of_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = crown_of_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				OR = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_qolab_winter_roses_artifact }
+				}
+			}
+		}
+	}
+
+	agot_headgear_crown_of_qolab_generic = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = western_wedding
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_qolab_generic_artifact }
+			}
+		}
+	}
+
+	agot_headgear_crown_of_deep_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = crown_of_deep_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_deep_winter_roses_artifact }
+			}
+		}
+	}
+
+	agot_headgear_qolab_crown_01 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_01
+			}
+		}
+		weight = {
+			base = 0
+		}
+	}
+
+	agot_headgear_qolab_crown_02 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_02
+			}
+		}
+		weight = {
+			base = 0
+		}
+	}
+
+	agot_headgear_qolab_crown_03 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = qolab_crown_03_artifact }
+			}
+		}
+	}
+
+	agot_headgear_qolab_crown_04 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = qolab_crown_04_artifact }
+			}
+		}
+	}
+
+	agot_headgear_qolab_crown_05 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_05
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = qolab_crown_05_artifact }
+			}
+		}
+	}
+
+	agot_headgear_qolab_crown_06 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_06
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = qolab_crown_06_artifact }
+			}
+		}
+	}
+
+	agot_headgear_qolab_crown_07 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_07
+			}
+		}
+		weight = {
+			base = 0
+		}
+	}
+	
+	agot_headgear_daemonblackfyre_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = daemonblackfyre_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_daemonblackfyre_artifact }
+			}
+			modifier = {
+				add = 250
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					house = house:house_Blackfyre
+				}
+			}
+		}
+	}
 
 	agot_headgear_crown_of_the_tides_crown = {
 		dna_modifiers = {
@@ -4004,7 +4216,7 @@ headgear_base = {
 		}
 	}
 	
-	agot_headgear_dead_crown_of_gardener_peace_crown = {
+	agot_headgear_crown_of_gardener_peace_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -4016,7 +4228,15 @@ headgear_base = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 241
+				add = 300
+				OR = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_qolab_gardener_artifact }
+				}
+			}
+			modifier = {
+				add = 250
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact }}
 				AND = {
 					OR = {
 						primary_title.tier = tier_empire
@@ -4033,6 +4253,7 @@ headgear_base = {
 						}
 					}
 					dynasty ?= dynasty:dynn_Gardener
+					days_of_continuous_peace >= 0
 				}
 			}
 		}
@@ -4656,29 +4877,6 @@ headgear_base = {
 			}
 		}
 	}
-
-	agot_headgear_crown_of_winter_roses_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = agot_crowns
-				accessory = crown_of_winter_roses
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
-			}
-			modifier = {
-				add = 290
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }}
-				this = character:Stark_5 # Lyanna Stark
-			}
-		}
-	}
 	
 	agot_headgear_crown_of_gardener_war_bronze_crown = {
 		dna_modifiers = {
@@ -5088,13 +5286,13 @@ headgear_base = {
 		}
 	}
 	
-	agot_headgear_alysanne_crown = {
+	agot_headgear_alysannecrown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = headgear
 				template = canon_queens
-				accessory = alysannetargaryen_crown
+				accessory = alysannecrown
 			}
 		}
 		weight = {
@@ -5102,12 +5300,12 @@ headgear_base = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
-				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_alysanne_artifact }
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = alysannecrown_artifact }
 			}
 			modifier = {
 				add = 1000
 				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_alysanne_artifact }}
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = alysannecrown_artifact }}
 				OR = {
 					this = character:Targaryen_36 # Alysanne
 					this = character:Arryn_80 # Aemma
@@ -5237,6 +5435,214 @@ headgear_base = {
 	}
 	
 ### Crowns of Westeros - Main Nerdman Crowns ###
+	
+	agot_headgear_alysanne_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = alysannetargaryen_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				AND = {
+					is_crowns_westeros_loaded_trigger = yes
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_alysanne_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_bittersteel_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = bittersteel_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				AND = {
+					is_crowns_westeros_loaded_trigger = yes
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = bittersteel_crown_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+	
+	agot_headgear_calla_blackfyre_circlet = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = calla_blackfyre_circlet
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = calla_blackfyre_circlet_artifact }
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = calla_blackfyre_circlet_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					this = character:Blackfyre_3 # Calla Blackfyre
+				}
+			}
+		}
+	}
+	
+	agot_headgear_argella_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = argella_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = argella_crown_artifact }
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = argella_crown_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					this = character:Durrandon_88 # Argella Durrandon
+				}
+			}
+		}
+	}
+	
+	agot_headgear_sharra_arryn_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = sharra_arryn_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = sharra_arryn_crown_artifact }
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = sharra_arryn_crown_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					this = character:Arryn_58 # Sharra Arryn
+				}
+			}
+		}
+	}
+	
+	agot_headgear_roland_arryn_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = roland_arryn_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = roland_arryn_crown_artifact }
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = roland_arryn_crown_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					this = character:Arryn_20 # Roland Arryn
+				}
+			}
+		}
+	}
 	
 	agot_headgear_rhaegar_crown = {
 		dna_modifiers = {
@@ -6116,31 +6522,6 @@ headgear_base = {
 		}
 	}
 	
-	agot_headgear_daemonblackfyre_crown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = crowns_of_westeros
-				accessory = daemonblackfyre_crown
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 300
-				is_crowns_westeros_loaded_trigger = yes
-				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_daemonblackfyre_artifact }
-			}
-			modifier = {
-				add = 250
-				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_daemonblackfyre_artifact }}
-				this = character:Targaryen_94 # Daemon Blackfyre
-			}
-		}
-	}
-	
 	agot_headgear_daemon_ii_blackfyre_crown = {
 		dna_modifiers = {
 			accessory = {
@@ -6557,6 +6938,54 @@ headgear_base = {
 			}
 		}
 	}	
+	
+	agot_headgear_tyboltthunderbolt_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = tyboltthunderbolt_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_tyboltthunderbolt_artifact }
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_tyboltthunderbolt_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Lannister
+				}
+				OR = {
+					this = character:Lannister_30 # King Loreon I 'the Lion' Lannister
+					this = character:Lannister_34 # Line of Loreon the Lion
+					this = character:Lannister_139 # King Tyrion I Lannister
+					this = character:Lannister_57 # King Tyrion II 'The Tormentor' Lannister
+					this = character:Lannister_37 # King Tybolt 'Thunderbolt' Lannister
+				}
+			}
+		}
+	}
 	
 	agot_headgear_geroldlannister_crown = {
 		dna_modifiers = {
