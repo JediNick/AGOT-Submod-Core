@@ -6939,6 +6939,54 @@ headgear_base = {
 		}
 	}	
 	
+	agot_headgear_tyboltthunderbolt_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = tyboltthunderbolt_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_tyboltthunderbolt_artifact }
+			}
+			modifier = {
+				add = 250
+				is_crowns_westeros_loaded_trigger = yes
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_tyboltthunderbolt_artifact }}
+				AND = {
+					OR = {
+						primary_title.tier = tier_empire
+						AND = {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_empire
+						}
+						primary_spouse ?= {
+							primary_title.tier = tier_kingdom
+							agot_is_independent_ruler = yes
+						}
+					}
+					dynasty ?= dynasty:dynn_Lannister
+				}
+				OR = {
+					this = character:Lannister_30 # King Loreon I 'the Lion' Lannister
+					this = character:Lannister_34 # Line of Loreon the Lion
+					this = character:Lannister_139 # King Tyrion I Lannister
+					this = character:Lannister_57 # King Tyrion II 'The Tormentor' Lannister
+					this = character:Lannister_37 # King Tybolt 'Thunderbolt' Lannister
+				}
+			}
+		}
+	}
+	
 	agot_headgear_geroldlannister_crown = {
 		dna_modifiers = {
 			accessory = {
