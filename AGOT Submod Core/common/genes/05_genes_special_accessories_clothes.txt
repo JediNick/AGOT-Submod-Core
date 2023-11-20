@@ -2375,6 +2375,10 @@ special_genes = {
 
 				male = {
 					1 = male_clothes_secular_valyrian_nobility_01_high
+					1 = male_clothes_secular_valyrian_robes_01_high
+					1 = male_clothes_secular_valyrian_robes_01_low
+					1 = male_clothes_secular_valyrian_robes_no_gloves_01_high
+					1 = male_clothes_secular_valyrian_robes_no_gloves_01_low
 				}
 
 				female = {
@@ -2384,17 +2388,19 @@ special_genes = {
 				boy = male
 				girl = female
 			}
-
-			valyrian_nobility_clothing_dyn = {
+			valyrian_nobility_clothing_generic = {
 				index = 202
 
 				male = {
-					1 = male_clothes_secular_valyrian_nobility_01_high_dyn
+					1 = male_clothes_secular_valyrian_nobility_01_generic_high
+					1 = male_clothes_secular_valyrian_robes_01_generic_high
+					1 = male_clothes_secular_valyrian_robes_01_generic_low
+					1 = male_clothes_secular_valyrian_robes_no_gloves_01_generic_high
+					1 = male_clothes_secular_valyrian_robes_no_gloves_01_generic_low
 				}
 
 				female = {
-				 	1 = female_clothes_secular_valyrian_dress_01_high_dyn
-					1 = female_clothes_secular_valyrian_dress_02_high_dyn
+					1 = female_clothes_secular_valyrian_dress_01_generic_high
 				}
 
 				boy = male

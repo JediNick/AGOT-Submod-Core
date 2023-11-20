@@ -675,6 +675,6 @@
 		is_valid_custom = {
 			is_lotd_loaded_trigger = yes
 		}
-		template = valyrian_nobility_clothing_dyn
+		template = valyrian_nobility_clothing_generic
 	}
 }

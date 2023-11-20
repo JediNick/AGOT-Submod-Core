@@ -2256,6 +2256,380 @@ marshal = {
 		portrait_modifier = {
 			animations = council_marshal_decal
 		}
+		
+		
+		##LOTD ADDED
+		council_marshal_spear = {
+			animation = { head = "council_marshal" torso = "throneRoom_twoHandedPassive1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_spear_trigger = yes
+					}
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_spear		
+	
+		}
+
+		council_marshal_spear_fat = {
+			animation = { head = "council_marshal" torso = "throneRoom_twoHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 65
+						NOT = { portrait_has_unique_spear_trigger = dwarf }
+						portrait_has_unique_spear_trigger = yes
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_spear		
+
+			
+			
+		}
+
+		council_marshal_spear_dwarf = {
+			animation = { head = "council_marshal" torso = "throneRoom_twoHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_spear_trigger = yes			                 
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_spear		
+
+			
+			
+		}
+
+		council_marshal_spear_fat_dwarf = {
+			animation = { head = "council_marshal" torso = "throneRoom_twoHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 60
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_spear_trigger = yes                   
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_spear		
+
+			
+			
+		}
+				
+		council_marshal_mace = {
+			animation = { head = "council_marshal" torso = "council_marshal" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_mace_trigger = yes
+					}
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_mace		
+
+			
+			
+		}
+
+		council_marshal_mace_fat = {
+			animation = { head = "council_marshal" torso = "council_marshalFat" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_mace_trigger = yes
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_mace		
+
+			
+			
+		}
+
+		council_marshal_mace_dwarf = {
+			animation = { head = "council_marshal" torso = "council_marshalFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 60
+						has_trait = dwarf
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_mace_trigger = yes			                 
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_mace		
+
+			
+			
+		}
+
+		council_marshal_mace_fat_dwarf = {
+			animation = { head = "council_marshal" torso = "council_marshalFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 60
+						has_trait = dwarf
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_mace_trigger = yes                   
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_mace		
+
+			
+		}
+				
+		council_marshal_hammer = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassive1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_hammer_trigger = yes
+					}
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_hammer		
+
+			
+			
+		}
+
+		council_marshal_hammer_fat = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_hammer_trigger = yes
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_hammer		
+
+			
+			
+		}
+
+		council_marshal_hammer_dwarf = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_hammer_trigger = yes			                 
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_hammer		
+
+			
+			
+		}
+
+		council_marshal_hammer_fat_dwarf = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 60
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_hammer_trigger = yes                   
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_hammer		
+
+			
+			
+		}
+				
+		council_marshal_axe = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassive1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 1000
+					AND = {
+						age >= 10
+						scope:current_weight < 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_axe_trigger = yes
+					}
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_axe		
+
+			
+			
+		}
+
+		council_marshal_axe_fat = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 65
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+						portrait_has_unique_axe_trigger = yes
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_axe		
+
+			
+			
+		}
+
+		council_marshal_axe_dwarf = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassiveFat1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_axe_trigger = yes			                 
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_axe		
+
+			
+		}
+
+		council_marshal_axe_fat_dwarf = {
+			animation = { head = "council_marshal" torso = "throneRoom_oneHandedPassiveFatDwarf1_entry" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						age >= 10
+						scope:current_weight > 60
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }
+						portrait_has_unique_axe_trigger = yes                   
+					}					
+				}
+			}
+			
+			portrait_modifier_pack = council_marshal_axe		
+
+			
+			
+		}	
 
 		council_marshal = {
 			animation = { head = "council_marshal" torso = "council_marshal" }
@@ -2367,7 +2741,8 @@ marshal = {
 				animations = emotion_happy_decal
 			}
 		}
-    }
+
+	}
 
     boy = male
     female = male
