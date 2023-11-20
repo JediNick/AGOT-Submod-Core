@@ -30,10 +30,6 @@ aegonblackfyre_crown = {
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
-daemonblackfyre_crown = {	
-	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
-}
 aegontheuncrowned_crown = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
@@ -135,10 +131,6 @@ female_maesteraemon_crown = {
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
 female_aegonblackfyre_crown = {	
-	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
-}
-female_daemonblackfyre_crown = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
@@ -331,6 +323,54 @@ gardener_peace_crown = {
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
 female_gardener_peace_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+argella_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_argella_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+bittersteel_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_bittersteel_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+calla_blackfyre_circlet = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_calla_blackfyre_circlet = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+sharra_arryn_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_sharra_arryn_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+roland_arryn_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_roland_arryn_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+alysannecrown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
+}
+female_alysannecrown = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }

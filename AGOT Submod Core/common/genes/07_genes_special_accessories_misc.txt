@@ -554,7 +554,17 @@ special_genes = {
 				girl = female
 			}
 
-			#AGOT use index 13 for next accessory
+			unlikely_cape_01 = {
+				index = 13
+				male = {
+					1 = unlikely_cape_01
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
 			
 			male_cloaks_secular_shouldercape_01 = {
 				index = 14
@@ -603,10 +613,22 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			
+			agot_historic_capes = {
+				index = 18
+				male = {
+					1 = unlikely_cape_02
+				}
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
 
 			#AGOT Added
 			kingsguard_cloak_aotk = {
-				index = 18
+				index = 19
 				male = {
 					1 = kingsguard_cloak_02
 					1 = kingsguard_cloak_03
