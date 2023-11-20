@@ -2332,12 +2332,12 @@
 		}	
 	}
 
-	artifact_aegon_dagger_equipped_prop = {
+	artifact_aegon_dagger_glow_prop = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = props_valyrian_lotd
-				template = aegon_dagger_prop
+				template = aegon_dagger_glow_prop
 				value = 0.7
 			}
 		}	

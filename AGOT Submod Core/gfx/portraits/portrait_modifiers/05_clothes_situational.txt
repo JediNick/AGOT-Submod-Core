@@ -324,7 +324,11 @@
             modifier = {
                 add = 1000
                 has_trait = kingsguard
-				NOT = {	has_game_rule = show_armor_enabled }
+            }
+            modifier = {
+                factor = 0
+                is_aotk_loaded_trigger = yes
+				has_game_rule = show_armor_enabled
             }
         }
     }

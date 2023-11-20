@@ -131,6 +131,19 @@
 			boy = male
 			girl = female
 		}
+
+		aegon_dagger_glow_prop = {
+			index = 10
+			male = {
+				1 = aegon_dagger_glow_prop
+			}
+			female = {
+				1 = aegon_dagger_glow_prop
+			}
+			boy = male
+			girl = female
+		}
+
 	
 	}
   }

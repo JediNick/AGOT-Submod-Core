@@ -14,6 +14,20 @@ one_handed_axe = {
 		animations = AI_vengeful_decal
 	}
 
+    portrait_modifier = {
+		trigger = {
+			is_lotd_loaded_trigger = yes
+			any_equipped_character_artifact = { 
+				artifact_type = axe  
+				has_variable = calamity 
+			}
+		}			
+		animations_props = artifact_calamity_prop
+		animations = council_marshal_decal
+		animations = fat_additive
+        animations = dwarf_additive
+	}
+
     portrait_modifier = { # Equipped
         trigger = {
             any_equipped_character_artifact = { artifact_type = axe }
@@ -1808,6 +1822,20 @@ throneRoom_one_handed_passive_1 = {
 		animations = fat_additive
         animations = dwarf_additive
 	}
+
+    portrait_modifier = {
+		trigger = {
+			is_lotd_loaded_trigger = yes
+			any_equipped_character_artifact = { 
+				artifact_type = axe  
+				has_variable = calamity 
+			}
+		}			
+		animations_props = artifact_calamity_prop
+		animations = council_marshal_decal
+		animations = fat_additive
+        animations = dwarf_additive
+	}
 	
  #AGOT Added
     portrait_modifier = {
@@ -2350,6 +2378,20 @@ throneRoom_one_handed_passive_2 = {
 		}			
 		animations_props = artifact_vs_axe_prop
 		animations = AI_vengeful_decal
+		animations = fat_additive
+        animations = dwarf_additive
+	}
+
+    portrait_modifier = {
+		trigger = {
+			is_lotd_loaded_trigger = yes
+			any_equipped_character_artifact = { 
+				artifact_type = axe  
+				has_variable = calamity 
+			}
+		}			
+		animations_props = artifact_calamity_prop
+		animations = council_marshal_decal
 		animations = fat_additive
         animations = dwarf_additive
 	}
@@ -3194,6 +3236,18 @@ council_marshal_axe = {
 			}
 		}			
 		animations_props = artifact_vs_axe_prop
+		animations = council_marshal_decal
+	}
+    
+    portrait_modifier = {
+		trigger = {
+			is_lotd_loaded_trigger = yes
+			any_equipped_character_artifact = { 
+				artifact_type = axe  
+				has_variable = calamity 
+			}
+		}			
+		animations_props = artifact_calamity_prop
 		animations = council_marshal_decal
 	}
 }

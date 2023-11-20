@@ -2493,6 +2493,13 @@ headgear_base = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_lotd_loaded_trigger = yes
+					has_game_rule = hotd_visuals
+				}
+			}
 		}
 	}
 
@@ -7929,21 +7936,18 @@ headgear_base = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 300
+				add = 30000
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
 			}
 			modifier = {
-				add = 600
+				add = 60000
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown } }
 				AND = {
 					has_game_rule = hotd_visuals
 					#primary_title = title:e_the_iron_throne
 					OR = {
 						this = character:Targaryen_27 # Aegon I
-						# this = character:Targaryen_30 # Aenys I
 						this = character:Targaryen_31 # Maegor I
-						this = character:Targaryen_65 # Aegon II
-						this = character:Targaryen_81 # Daeron I
 					}
 				}
 			}
@@ -7974,9 +7978,18 @@ headgear_base = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 300
+				add = 30000
+				has_game_rule = hotd_visuals
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown_nogems }
+			}
+			modifier = {
+				add = 70000
+				has_game_rule = hotd_visuals
+				OR = {
+					this = character:Targaryen_65 # Aegon II
+					this = character:Targaryen_81 # Daeron I
+				}
 			}
 			modifier = {
 				factor = 0
@@ -7986,12 +7999,43 @@ headgear_base = {
 						NOT = { has_variable = aegoncrown_nogems }
 					}
 				}
+				modifier = {
+					factor = 0
+					NOT =  { is_lotd_loaded_trigger = yes }
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_game_rule = hotd_visuals }
+				}
+			}
+		}
+
+	viserys_mask = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = special_headgear_face_mask_viserys
+				template = face_mask
+				range = { 0 1 } # For the randomness to work correctly
+				}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				AND = {
+					#primary_title = title:e_the_iron_throne
+					OR = {
+						this = character:Targaryen_60 # Viserys I
+					}
+				}
+			}
 			modifier = {
 				factor = 0
 				NOT =  { is_lotd_loaded_trigger = yes }
 			}
-			}
 		}
+	}
 
 	viserys_crown = {
 		dna_modifiers = {
@@ -8030,5 +8074,4 @@ headgear_base = {
 			}
 		}
 	}
-
 }
