@@ -581,6 +581,21 @@
 		gene = clothes
 		template = valyrian_nobility_clothes
 	}
+	
+	add_accessory_modifiers = {
+		gene = clothes
+		template = dragonbane_doublet_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = unlikely_gown_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = unlikely_gown_royal_clothes
+	}
 
 	#AGOT Added, Generic Armor
 	add_accessory_modifiers = {

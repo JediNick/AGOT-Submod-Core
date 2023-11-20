@@ -1087,6 +1087,11 @@
 		template = agot_crowns
 	}
 	
+	add_accessory_modifiers = {
+		gene = headgear
+		template = agot_qolab
+	}
+	
 	##Crowns of Westeros
 	add_accessory_modifiers = {
 		gene = headgear
