@@ -5,6 +5,7 @@
 				has_variable = vs_sword_1
 				has_variable = vs_sword_2
 				has_variable = vs_sword_3
+				has_variable = vs_sword_4
 				has_variable = blackfyre
 				has_variable = darksister
 				has_variable = seafoam

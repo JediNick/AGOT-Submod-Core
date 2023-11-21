@@ -1408,7 +1408,7 @@ clothes_base = { # The lowest priority group of clothes with triggers based on r
 				mode = add
 				gene = clothes
 				template = valyrian_nobility_clothing
-				accessory = female_clothes_secular_valyrian_dress_01_high
+                range = { 0 1 } # For the randomness to work correctly
 			}
 		}
 		weight = {
