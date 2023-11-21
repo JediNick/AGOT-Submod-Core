@@ -5017,13 +5017,13 @@ headgear_base = {
 		}
 	}
 	
-	agot_headgear_crown_of_the_old_gods_crown = {
+	agot_headgear_crown_of_weirwood_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = headgear
 				template = crowns_of_westeros
-				accessory = crown_of_the_old_gods
+				accessory = crown_of_weirwood
 			}
 		}
 		weight = {
@@ -5032,20 +5032,20 @@ headgear_base = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
 				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_old_gods_artifact }
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_weirwood_artifact }
 					agot_is_independent_ruler = yes
 				}
 			}
 		}
 	}
 	
-	agot_headgear_crown_of_the_seven_crown = {
+	agot_headgear_circlet_of_the_seven_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = headgear
 				template = crowns_of_westeros
-				accessory = crown_of_the_seven
+				accessory = circlet_of_the_seven
 			}
 		}
 		weight = {
@@ -5054,7 +5054,7 @@ headgear_base = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
 				AND = {
-					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_the_seven_artifact }
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = circlet_of_the_seven_artifact }
 					agot_is_independent_ruler = yes
 				}
 			}
