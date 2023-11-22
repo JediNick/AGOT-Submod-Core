@@ -634,22 +634,22 @@ female_crown_of_true_winter = {
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
 }
 
-crown_of_the_old_gods = {	
+crown_of_weirwood = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
 
-female_crown_of_the_old_gods = {	
+female_crown_of_weirwood = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
 }
 
-crown_of_the_seven = {	
+circlet_of_the_seven = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }	
 }
 
-female_crown_of_the_seven = {	
+female_circlet_of_the_seven = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		 	 }		
 }
