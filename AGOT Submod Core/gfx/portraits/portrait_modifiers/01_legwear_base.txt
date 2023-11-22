@@ -695,4 +695,78 @@
 			}			
 		}
 	}
+
+	lotd_legwear_high_valyrian = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = high_valyrian_war_legwear
+				range = { 0.6 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				exists = this
+				portrait_wear_armor_trigger = yes
+				portrait_valyrian_clothing_trigger = yes
+			}
+		}
+	}
+
+
+	lotd_valyrian_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = valyrian_nobility_legwear
+				range = { 0.6 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 150
+				is_lotd_loaded_trigger = yes
+				portrait_valyrian_clothing_trigger = yes
+				portrait_wear_armor_trigger = no
+			}
+		}
+	}
+
+
+	lotd_valyrian_legwear_nobility = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = valyrian_nobility_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 25
+				is_lotd_loaded_trigger = yes
+				portrait_valyrian_clothing_trigger = yes
+				portrait_wear_armor_trigger = no
+				OR = {
+					portrait_royalty_trigger = { 
+						CULTURE_INPUT = byzantine
+					}
+					portrait_imperial_trigger = {
+						CULTURE_INPUT = byzantine
+					}   
+				}
+
+			}
+		}
+	}
 }

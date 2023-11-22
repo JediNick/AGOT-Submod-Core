@@ -235,6 +235,21 @@ one_handed_sword = {
 		animations = dwarf_additive
 	}
 
+    portrait_modifier = {
+		trigger = {
+			#is_valyrian_steel_loaded_trigger = yes
+			any_equipped_character_artifact = { 
+				artifact_type = sword  
+				has_variable = vs_sword_4
+			}
+		}			
+		animations_props = artifact_vs_sword_4_prop
+		animations = council_marshal_decal
+		animations = fat_additive
+		animations = dwarf_additive
+	}
+
+
     #AGOT Added
     portrait_modifier = {
         trigger = {

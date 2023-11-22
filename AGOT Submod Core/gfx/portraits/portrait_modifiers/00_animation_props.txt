@@ -2232,6 +2232,17 @@
 		}	
 	}
 
+	artifact_vs_sword_4_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian
+				template = vs_sword_4_prop
+				value = 1.0
+			}
+		}	
+	}
+
 	artifact_vs_dagger_1_prop = {
 		dna_modifiers = {
 			accessory = {

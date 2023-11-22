@@ -120,6 +120,18 @@
 				boy = male
 				girl = female
 			}
+
+			vs_sword_4_prop = {
+				index = 9
+				male = {
+					1 = vs_sword_4_prop
+				}
+				female = {
+					1 = vs_sword_4_prop	
+				}
+				boy = male
+				girl = female
+			}
 		}
 	
 	}
