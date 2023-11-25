@@ -138,6 +138,12 @@ special_genes = {
 					1 = m_headgear_sec_ep2_western_era1_com_01
 					1 = m_headgear_sec_ep2_western_era1_roy_01
 					1 = m_headgear_sec_ep2_western_era1_imp_01
+					# FP3 #
+					3 = m_headgear_sec_fp3_iranian_imp_01
+					3 = m_headgear_sec_fp3_iranian_roy_01
+					3 = m_headgear_sec_fp3_iranian_war_nob_01
+					3 = m_headgear_sec_fp3_iranian_nob_01
+					3 = m_headgear_sec_fp3_iranian_nob_02
 				}
 
 				female = {
@@ -248,6 +254,12 @@ special_genes = {
 					1 = f_headgear_sec_ep2_mena_war_nob_01
 					1 = f_headgear_sec_ep2_byzantine_war_nob_01
 					1 = f_headgear_sec_ep2_indian_war_nob_01
+					# FP3 #
+					3 = f_headgear_sec_fp3_iranian_imp_01
+					3 = f_headgear_sec_fp3_iranian_roy_01
+					3 = f_headgear_sec_fp3_iranian_war_nob_01
+					3 = f_headgear_sec_fp3_iranian_nob_01
+					3 = f_headgear_sec_fp3_iranian_nob_02
 				}
 
 				boy = male
@@ -1975,6 +1987,17 @@ special_genes = {
 
 			}
 
+			reward_western_royalty = {
+				index = 138
+				male = {
+					1 = male_headgear_secular_western_royalty_03
+				}
+				female = {
+					1 = female_headgear_secular_western_royalty_03
+				}
+				boy = male
+				girl = male
+			}
 
 		## SP2 - Elegance of the Empire ##
 
@@ -2052,186 +2075,92 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			
+			## FP3 - Sands of Time ##
 
-			#AGOT Added
-			aegonIII_crown = {
-				index = 125
-				male = {
-					1 = aegonIIIcrown
-				}
-				female = {
-					1 = female_aegonIIIcrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			aegonIV_crown = {
-				index = 126
-				male = {
-					1 = aegonIVcrown
-				}
-				female = {
-					1 = female_aegonIVcrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			maekarI_crown = {
-				index = 127
-				male = {
-					1 = maekarIcrown
-				}
-				female = {
-					1 = female_maekarIcrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			robertI_crown = {
-				index = 128
-				male = {
-					1 = robertIcrown
-				}
-				female = {
-					1 = female_robertIcrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			joffreyI_crown = {
-				index = 129
-				male = {
-					1 = joffreyIcrown
-				}
-				female = {
-					1 = female_joffreyIcrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			renly_crown = {
+			fp3_iranian_royalty = {
 				index = 130
 				male = {
-					1 = renlycrown
+					1 = m_headgear_sec_fp3_iranian_roy_01
 				}
 				female = {
-					1 = female_renlycrown
+					1 = f_headgear_sec_fp3_iranian_roy_01
 				}
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			stannis_crown = {
+			fp3_iranian_low_nobility = {
 				index = 131
 				male = {
-					1 = stanniscrown
+					1 = m_headgear_sec_fp3_iranian_nob_01
 				}
 				female = {
-					1 = female_stanniscrown
+					1 = f_headgear_sec_fp3_iranian_nob_01
 				}
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			daenerys_crown = {
+			fp3_iranian_nobility = {
 				index = 132
 				male = {
-					1 = daeneryscrown
+					1 = m_headgear_sec_fp3_iranian_nob_02
 				}
 				female = {
-					1 = female_daeneryscrown
+					1 = f_headgear_sec_fp3_iranian_nob_02
 				}
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			beyondthewall_crown = {
-				index = 133
-				male = {
-					1 = beyondthewallcrown
-				}
-				female = {
-					1 = female_beyondthewallcrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			cannibal_crown = {
+			fp3_iranian_war = {
 				index = 134
 				male = {
-					1 = cannibalcrown
+					1 = m_headgear_sec_fp3_iranian_war_nob_01
 				}
 				female = {
-					1 = female_cannibalcrown
+					1 = f_headgear_sec_fp3_iranian_war_nob_01
 				}
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			crown_of_winter = {
+			fp3_iranian_imperial = {
 				index = 135
 				male = {
-					1 = crownofwinter
+					1 = m_headgear_sec_fp3_iranian_imp_01
 				}
 				female = {
-					1 = female_crownofwinter
+					1 = f_headgear_sec_fp3_iranian_imp_01
 				}
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			bolton_crown = {
+			## FP3 - Turkic ##
+
+			fp3_turkic_low_nobility = {
 				index = 136
 				male = {
-					1 = bolton_crown
+					1 = m_headgear_sec_fp3_turkic_nob_01
 				}
 				female = {
-					1 = female_bolton_crown
+					5 = empty
+					5 = female_headgear_secular_steppe_common_01
 				}
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			riverlands_crown = {
+			fp3_turkic_nobility = {
 				index = 137
 				male = {
-					1 = riverlandscrown
+					1 = m_headgear_sec_fp3_turkic_nob_02
 				}
 				female = {
-					1 = female_riverlandscrown
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			iron_isles_crowns = {
-				index = 138
-				male = {
-					1 = ironislescrown
-					1 = driftwoodcrown1
-				}
-				female = {
-					1 = female_ironislescrown
-					1 = female_driftwoodcrown1
+					5 = empty
+					5 = female_headgear_secular_steppe_high_nobility_01
 				}
 				boy = male
 				girl = female
@@ -2317,9 +2246,37 @@ special_genes = {
 				girl = female
 			}
 
+			agot_qolab = {
+				index = 145
+				male = {
+					1 = qolab_crown_01
+					1 = qolab_crown_02
+					1 = qolab_crown_07
+					1 = crown_of_winter_roses
+					1 = crown_of_deep_winter_roses
+					1 = qolab_crown_03
+					1 = qolab_crown_04
+					1 = qolab_crown_05
+					1 = qolab_crown_06
+				}
+				female = {
+					1 = female_qolab_crown_01
+					1 = female_qolab_crown_02
+					1 = female_qolab_crown_07
+					1 = female_crown_of_winter_roses
+					1 = female_crown_of_deep_winter_roses
+					1 = female_qolab_crown_03
+					1 = female_qolab_crown_04
+					1 = female_qolab_crown_05
+					1 = female_qolab_crown_06
+				}
+				boy = male
+				girl = female
+			}
+
 			#AGOT Added
 			highsepton_1 = {
-				index = 145
+				index = 146
 				male = {
 					1 = highsepton_1
 				}
@@ -2332,7 +2289,7 @@ special_genes = {
 
 			#AGOT Added
 			agot_crowns = {
-				index = 146
+				index = 147
 				male = {
 					1 = daemonblackfyre_crown
 					1 = crown_of_westerling
@@ -2347,7 +2304,6 @@ special_genes = {
 					1 = crown_of_rhllor
 					1 = circlet_of_rhllor
 					1 = crown_of_jeyne_westerling
-					1 = crown_of_winter_roses
 					
 				}
 				female = {
@@ -2364,39 +2320,10 @@ special_genes = {
 					1 = female_crown_of_rhllor
 					1 = female_circlet_of_rhllor
 					1 = female_crown_of_jeyne_westerling
-					1 = female_crown_of_winter_roses
 				}
 				boy = male
 				girl = female
 			}	
-
-			agot_qolab = {
-				index = 147
-				male = {
-					1 = qolab_crown_01
-					1 = qolab_crown_02
-					1 = qolab_crown_07
-					1 = crown_of_winter_roses
-					1 = crown_of_deep_winter_roses	
-					1 = qolab_crown_03
-					1 = qolab_crown_04
-					1 = qolab_crown_05
-					1 = qolab_crown_06				
-				}
-				female = {
-					1 = female_qolab_crown_01
-					1 = female_qolab_crown_02
-					1 = female_qolab_crown_07
-					1 = female_crown_of_winter_roses
-					1 = female_crown_of_deep_winter_roses
-					1 = female_qolab_crown_03
-					1 = female_qolab_crown_04
-					1 = female_qolab_crown_05
-					1 = female_qolab_crown_06
-				}
-				boy = male
-				girl = female
-			}
 
 			#AGOT Added
 			westerlands_war = {
@@ -2906,6 +2833,191 @@ special_genes = {
 				girl = female
 			}
 			
+			#AGOT Added
+			aegonIII_crown = {
+				index = 187
+				male = {
+					1 = aegonIIIcrown
+				}
+				female = {
+					1 = female_aegonIIIcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			aegonIV_crown = {
+				index = 188
+				male = {
+					1 = aegonIVcrown
+				}
+				female = {
+					1 = female_aegonIVcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			maekarI_crown = {
+				index = 189
+				male = {
+					1 = maekarIcrown
+				}
+				female = {
+					1 = female_maekarIcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			robertI_crown = {
+				index = 190
+				male = {
+					1 = robertIcrown
+				}
+				female = {
+					1 = female_robertIcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			joffreyI_crown = {
+				index = 191
+				male = {
+					1 = joffreyIcrown
+				}
+				female = {
+					1 = female_joffreyIcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			renly_crown = {
+				index = 192
+				male = {
+					1 = renlycrown
+				}
+				female = {
+					1 = female_renlycrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			stannis_crown = {
+				index = 193
+				male = {
+					1 = stanniscrown
+				}
+				female = {
+					1 = female_stanniscrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			daenerys_crown = {
+				index = 194
+				male = {
+					1 = daeneryscrown
+				}
+				female = {
+					1 = female_daeneryscrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			beyondthewall_crown = {
+				index = 195
+				male = {
+					1 = beyondthewallcrown
+				}
+				female = {
+					1 = female_beyondthewallcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			cannibal_crown = {
+				index = 196
+				male = {
+					1 = cannibalcrown
+				}
+				female = {
+					1 = female_cannibalcrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			crown_of_winter = {
+				index = 197
+				male = {
+					1 = crownofwinter
+				}
+				female = {
+					1 = female_crownofwinter
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			bolton_crown = {
+				index = 198
+				male = {
+					1 = bolton_crown
+				}
+				female = {
+					1 = female_bolton_crown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			riverlands_crown = {
+				index = 199
+				male = {
+					1 = riverlandscrown
+				}
+				female = {
+					1 = female_riverlandscrown
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			iron_isles_crowns = {
+				index = 200
+				male = {
+					1 = ironislescrown
+					1 = driftwoodcrown1
+				}
+				female = {
+					1 = female_ironislescrown
+					1 = female_driftwoodcrown1
+				}
+				boy = male
+				girl = female
+			}
+		}
+			
 			#New Westeros Crowns
 			
 			crowns_of_westeros = {
@@ -2920,7 +3032,6 @@ special_genes = {
 					1 = maesteraemon_crown
 					1 = aegontheuncrowned_crown
 					1 = male_aereatargaryen_crown
-					1 = alysannetargaryen_crown
 					1 = aegonsonofjaehaerys_crown
 					1 = daenerys_daughterofjaehaerys_crown
 					1 = aemonsonofjaehaerys_crown
@@ -2934,6 +3045,7 @@ special_genes = {
 					1 = valarr_crown
 					1 = jonsnow_crown
 					1 = laenorvelaryon_crown
+					1 = daemonblackfyre_crown
 					1 = aegonblackfyre_crown
 					1 = aenysblackfyre_crown
 					1 = maelysblackfyre_crown
@@ -2943,7 +3055,6 @@ special_genes = {
 					1 = margaerytyrell_crown
 					1 = robbstark_crown
 					1 = branstark_crown
-					1 = tyboltthunderbolt_crown
 					1 = geroldlannister_crown
 					1 = lancellannister_crown
 					1 = garlandgardener_crown
@@ -2955,11 +3066,6 @@ special_genes = {
 					1 = seawyrm_crown
 					1 = celtigar_crown
 					1 = shieraseastar_crown
-					1 = bittersteel_crown
-					1 = argella_crown
-					1 = calla_blackfyre_circlet
-					1 = sharra_arryn_crown
-					1 = roland_arryn_crown
 					1 = hugor_of_the_hill_crown
 					1 = crown_of_the_iron_throne
 					1 = crown_of_the_red_keep
@@ -3004,7 +3110,6 @@ special_genes = {
 					1 = female_maesteraemon_crown
 					1 = female_aegontheuncrowned_crown
 					1 = aereatargaryen_crown
-					1 = female_alysannetargaryen_crown
 					1 = female_aegonsonofjaehaerys_crown
 					1 = female_daenerys_daughterofjaehaerys_crown
 					1 = female_aemonsonofjaehaerys_crown
@@ -3018,6 +3123,7 @@ special_genes = {
 					1 = female_valarr_crown
 					1 = female_jonsnow_crown
 					1 = female_laenorvelaryon_crown
+					1 = female_daemonblackfyre_crown
 					1 = female_aegonblackfyre_crown
 					1 = female_aenysblackfyre_crown
 					1 = female_maelysblackfyre_crown
@@ -3027,7 +3133,6 @@ special_genes = {
 					1 = female_margaerytyrell_crown
 					1 = female_robbstark_crown
 					1 = female_branstark_crown
-					1 = female_tyboltthunderbolt_crown
 					1 = female_geroldlannister_crown
 					1 = female_lancellannister_crown
 					1 = female_garlandgardener_crown
@@ -3039,11 +3144,6 @@ special_genes = {
 					1 = female_seawyrm_crown
 					1 = female_celtigar_crown
 					1 = female_shieraseastar_crown
-					1 = female_bittersteel_crown
-					1 = female_argella_crown
-					1 = female_calla_blackfyre_circlet
-					1 = female_sharra_arryn_crown
-					1 = female_roland_arryn_crown
 					1 = female_hugor_of_the_hill_crown
 					1 = female_crown_of_the_iron_throne
 					1 = female_crown_of_the_red_keep
@@ -3087,7 +3187,7 @@ special_genes = {
 					1 = rhaenys_circlet
 					1 = alyssavelaryon_crown
 					1 = rhaenatargaryen_crown
-					1 = alysannecrown
+					1 = alysannetargaryen_crown
 					1 = alicenthightower_crown
 					1 = daena_crown
 					1 = bethablackwood_circlet
@@ -3096,7 +3196,7 @@ special_genes = {
 					1 = female_rhaenys_circlet
 					1 = female_alyssavelaryon_crown
 					1 = female_rhaenatargaryen_crown
-					1 = female_alysannecrown
+					1 = female_alysannetargaryen_crown
 					1 = female_alicenthightower_crown
 					1 = female_daena_crown
 					1 = female_bethablackwood_circlet
