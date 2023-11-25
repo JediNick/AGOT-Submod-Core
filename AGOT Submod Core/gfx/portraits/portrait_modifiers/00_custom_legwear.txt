@@ -57,6 +57,12 @@
 		template = ep2_western_war_legwear
 	}
 	
+	#AGOT Added, Generic Clothes
+	add_accessory_modifiers = {
+		gene = legwear
+		template = dragon_prince_legwear
+	}
+	
 	#AGOT Added, Specific Clothes
 	add_accessory_modifiers = {
 		gene = legwear

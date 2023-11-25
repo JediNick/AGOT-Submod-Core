@@ -131,7 +131,13 @@ special_genes = {
 					1 = m_clothes_sec_fp2_iberian_muslim_war_nob_01_hi
 					1 =	m_clothes_sec_fp2_iberian_christian_war_nob_01_lo
 					1 =	m_clothes_sec_fp2_iberian_christian_war_nob_01_hi
-
+					1 = m_clothes_sec_fp3_iranian_nob_01_lo
+					1 = m_clothes_sec_fp3_iranian_nob_02_lo
+					1 = m_clothes_sec_fp3_iranian_nob_03_lo
+					1 = m_clothes_sec_fp3_iranian_nob_01_hi
+					1 = m_clothes_sec_fp3_iranian_nob_02_hi
+					1 = m_clothes_sec_fp3_iranian_nob_03_hi
+					1 = m_clothes_sec_fp3_iranian_war_nob_01
 				# EP2 #
 					1 = m_clothes_sec_ep2_western_era1_nob_01_lo
 					1 = m_clothes_sec_ep2_western_era1_nob_01_hi
@@ -255,6 +261,13 @@ special_genes = {
 					1 = f_clothes_sec_fp2_iberian_muslim_war_nob_01_hi
 					1 =	f_clothes_sec_fp2_iberian_christian_war_nob_01_lo
 					1 =	f_clothes_sec_fp2_iberian_christian_war_nob_01_hi
+					1 = f_clothes_sec_fp3_iranian_nob_01_lo
+					1 = f_clothes_sec_fp3_iranian_nob_02_lo
+					1 = f_clothes_sec_fp3_iranian_nob_03_lo
+					1 = f_clothes_sec_fp3_iranian_nob_01_hi
+					1 = f_clothes_sec_fp3_iranian_nob_02_hi
+					1 = f_clothes_sec_fp3_iranian_nob_03_hi
+					1 = f_clothes_sec_fp3_iranian_war_nob_01
 
 				# EP2 #
 					1 = f_clothes_sec_ep2_western_era1_nob_01
@@ -346,6 +359,8 @@ special_genes = {
 					2 = male_clothes_secular_western_nobility_02_high
 					2 = male_clothes_secular_western_nobility_03_high
 					1 = male_clothes_secular_dde_hre_nobility_01_high
+					#AGOT Added
+					1 = male_clothes_secular_unlikely_gown_01
 				}
 
 				female = {
@@ -353,6 +368,8 @@ special_genes = {
 					2 = female_clothes_secular_western_nobility_02_high
 					2 = female_clothes_secular_western_nobility_03_high
 					1 = female_clothes_secular_dde_hre_nobility_01_high
+					#AGOT Added
+					1 = female_clothes_secular_unlikely_gown_01
 				}
 
 				boy = male
@@ -620,13 +637,23 @@ special_genes = {
 				index = 19
 
 				male = {
-					1 = male_clothes_secular_byzantine_nobility_01_high
-					1 = male_clothes_secular_byzantine_nobility_02_high
+					#AGOT Modified
+					# 1 = male_clothes_secular_byzantine_nobility_01_high
+					# 1 = male_clothes_secular_byzantine_nobility_02_high
+					2 = male_clothes_secular_byzantine_nobility_01_high
+					2 = male_clothes_secular_byzantine_nobility_02_high
+					#AGOT Added
+					1 = male_clothes_secular_unlikely_gown_royal_01
 				}
 
 				female = {
-					1 = female_clothes_secular_byzantine_nobility_01_high
-					1 = female_clothes_secular_byzantine_nobility_02_high
+					#AGOT Modified
+					# 1 = female_clothes_secular_byzantine_nobility_01_high
+					# 1 = female_clothes_secular_byzantine_nobility_02_high
+					2 = female_clothes_secular_byzantine_nobility_01_high
+					2 = female_clothes_secular_byzantine_nobility_02_high
+					#AGOT Added
+					1 = female_clothes_secular_unlikely_gown_royal_01
 				}
 				boy = male
 				girl = female
@@ -1510,7 +1537,7 @@ special_genes = {
 				girl = female
 			}
 
-	## FP1 - Fury of thee Northmen ##
+	## FP1 - Fury of the Northmen ##
 
 
 			fp1_commoner_clothes = {
@@ -1851,14 +1878,24 @@ special_genes = {
 				index = 88
 
 				male = {
-					1 = m_clothes_sec_ep2_western_era3_nob_01_hi
-					1 = m_clothes_sec_ep2_western_era3_nob_02_hi
+					#AGOT Modified
+					# 1 = m_clothes_sec_ep2_western_era3_nob_01_hi
 					# 1 = m_clothes_sec_ep2_western_era3_nob_02_hi
+					2 = m_clothes_sec_ep2_western_era3_nob_01_hi
+					2 = m_clothes_sec_ep2_western_era3_nob_02_hi
+					# 1 = m_clothes_sec_ep2_western_era3_nob_02_hi
+					#AGOT Added
+					1 = male_clothes_secular_unlikely_gown_01
 				}
 
 				female = {
-					1 = f_clothes_sec_ep2_western_era3_nob_01_hi
-					1 = f_clothes_sec_ep2_western_era3_nob_02_hi
+					#AGOT Modified
+					# 1 = f_clothes_sec_ep2_western_era3_nob_01_hi
+					# 1 = f_clothes_sec_ep2_western_era3_nob_02_hi
+					2 = f_clothes_sec_ep2_western_era3_nob_01_hi
+					2 = f_clothes_sec_ep2_western_era3_nob_02_hi
+					#AGOT Added
+					1 = female_clothes_secular_unlikely_gown_01
 				}
 				boy = male
 				girl = female
@@ -2031,73 +2068,59 @@ special_genes = {
 				girl = female
 
 			}
+			
+			## FP3 - Sands of Time ##
 
-			#AGOT Added
-			robert_baratheon_war_clothes = {
-				index = 98
-
-				male = {
-					1 = male_clothes_stormlands_war_04
-				}
-				female = {
-					0 = f_clothes_sec_northern_war_nob_01_lo
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			reach_war_nobility_clothes = {
-				index = 99
-
-				male = {
-					1 = male_clothes_reach_war_03
-				}
-				female = {
-					0 = f_clothes_sec_northern_war_nob_01_lo
-				}
-				boy = male
-				girl = female
-			}
-
-			#AGOT Added
-			rhaegar_targaryen_nobility_clothes = {
+			fp3_iranian_low_nobility_clothes = {
 				index = 100
 
 				male = {
-					1 = male_clothes_valyrian_war_04
+					1 = m_clothes_sec_fp3_iranian_nob_01_lo
+					1 = m_clothes_sec_fp3_iranian_nob_02_lo
+					1 = m_clothes_sec_fp3_iranian_nob_03_lo
 				}
+
 				female = {
-					0 = f_clothes_sec_northern_war_nob_01_lo
+					1 = f_clothes_sec_fp3_iranian_nob_01_lo
+					1 = f_clothes_sec_fp3_iranian_nob_02_lo
+					1 = f_clothes_sec_fp3_iranian_nob_03_lo
 				}
+
 				boy = male
 				girl = female
-			}
 
-			#AGOT Added
-			kingsguard_war_nobility_clothes = {
+			}	
+
+			fp3_iranian_high_nobility_clothes = {
 				index = 101
 
 				male = {
-					1 = male_clothes_kingsguard_war_01
+					1 = m_clothes_sec_fp3_iranian_nob_01_hi
+					1 = m_clothes_sec_fp3_iranian_nob_02_hi
+					1 = m_clothes_sec_fp3_iranian_nob_03_hi
 				}
+
 				female = {
-					0 = f_clothes_sec_northern_war_nob_01_lo
+					1 = f_clothes_sec_fp3_iranian_nob_01_hi
+					1 = f_clothes_sec_fp3_iranian_nob_02_hi
+					1 = f_clothes_sec_fp3_iranian_nob_03_hi
 				}
+
 				boy = male
 				girl = female
 			}
 
-			#AGOT Added
-			valyrian_nobility_clothes = {
+			fp3_iranian_war_nobility_clothes = {
 				index = 102
 
 				male = {
-					0 = male_clothes_secular_western_nobility_01_high
+					1 = m_clothes_sec_fp3_iranian_war_nob_01
 				}
+
 				female = {
-					1 = female_clothes_secular_valyrian_nobility_01
+					1 = f_clothes_sec_fp3_iranian_war_nob_01
 				}
+
 				boy = male
 				girl = female
 			}
@@ -2234,7 +2257,6 @@ special_genes = {
 
 				male = {
 					1 = male_clothes_secular_byzantine_nobility_01_low
-					1 = male_clothes_secular_byzantine_nobility_02_low
 				}
 				female = {
 					1 = female_clothes_religious_redpreistess_01
@@ -2343,8 +2365,9 @@ special_genes = {
 				}
 				boy = male
 				girl = female
-			}
-			
+			}					
+
+			#AGOT Added
 			unlikely_gown_clothes = {
 				index = 120
 
@@ -2404,11 +2427,81 @@ special_genes = {
 				boy = male
 				girl = female
 			}
-			
 
+			#AGOT Added
+			robert_baratheon_war_clothes = {
+				index = 124
+
+				male = {
+					1 = male_clothes_stormlands_war_04
+				}
+				female = {
+					0 = f_clothes_sec_northern_war_nob_01_lo
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			reach_war_nobility_clothes = {
+				index = 125
+
+				male = {
+					1 = male_clothes_reach_war_03
+				}
+				female = {
+					0 = f_clothes_sec_northern_war_nob_01_lo
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			rhaegar_targaryen_nobility_clothes = {
+				index = 126
+
+				male = {
+					1 = male_clothes_valyrian_war_04
+				}
+				female = {
+					0 = f_clothes_sec_northern_war_nob_01_lo
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			kingsguard_war_nobility_clothes = {
+				index = 127
+
+				male = {
+					1 = male_clothes_kingsguard_war_01
+				}
+				female = {
+					0 = f_clothes_sec_northern_war_nob_01_lo
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			valyrian_nobility_clothes = {
+				index = 128
+
+				male = {
+					0 = male_clothes_secular_western_nobility_01_high
+				}
+				female = {
+					1 = female_clothes_secular_valyrian_nobility_01
+				}
+				boy = male
+				girl = female
+			}
+			
+			
 			#NOTAGOTADDED
 			kingsguard_armor_clothes = {
-				index = 201
+				index = 200
 
 				male = {
 					1 = male_clothes_secular_western_KG_armor_01
@@ -2431,7 +2524,7 @@ special_genes = {
 			}
 
 			valyrian_nobility_clothing = {
-				index = 202
+				index = 201
 
 				male = {
 					1 = male_clothes_secular_valyrian_nobility_01_high
@@ -2465,7 +2558,8 @@ special_genes = {
 
 				boy = male
 				girl = female
-			}					
+			}
+
 		}	
 	}
 }

@@ -1012,6 +1012,7 @@ one_handed_dagger = {
 
 two_handed_spear = {
 
+	#AGOT Added
 	portrait_modifier = {
 		trigger = {
 			is_valyrian_steel_loaded_trigger = yes
@@ -2912,6 +2913,7 @@ throneRoom_two_handed_passive_1 = {
         animations = dwarf_additive
     }
 	
+	#AGOT Added
 	portrait_modifier = {
 	    trigger = {
 			culture = { has_cultural_pillar = heritage_rhoynish }
