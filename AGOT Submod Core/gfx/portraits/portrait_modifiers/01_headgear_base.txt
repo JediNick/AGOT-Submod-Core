@@ -2378,13 +2378,13 @@ fp3_turkic_high_nobles = {
 		                    CULTURE_INPUT = northern
 		                } 
 					}
-                portrait_royalty_trigger = {
-                    CULTURE_INPUT = fp1_norse
-                }   
+	                portrait_royalty_trigger = {
+	                    CULTURE_INPUT = fp1_norse
+	                } 	                
+				}  
 			}
 		}
 	}
-}
 
 	fp1_norse_imperial = {
 		dna_modifiers = {
@@ -2406,13 +2406,13 @@ fp3_turkic_high_nobles = {
 		                    CULTURE_INPUT = northern
 		                } 
 					}
-                portrait_imperial_trigger = {
-                    CULTURE_INPUT = fp1_norse 
-                }
+	                portrait_imperial_trigger = {
+	                    CULTURE_INPUT = fp1_norse
+	                } 	                
+				}
 			}
 		}
 	}
-}
 
 ## Sub-Saharan Africans ##
 
@@ -3620,7 +3620,7 @@ fp3_turkic_high_nobles = {
 					agot_is_independent_ruler = yes
 					dynasty ?= dynasty:dynn_Targaryen
 					OR = {
-					has_nickname = nick_stormborn
+						has_nickname = nick_stormborn
 						has_character_flag = is_dany
 					}
 				}
@@ -3925,7 +3925,7 @@ fp3_turkic_high_nobles = {
 				template = westerlands_crowns
 				range = { 0 1 }
 			}
-			}
+		}
 		weight = {
 			base = 0
 			modifier = {
@@ -5307,13 +5307,13 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				OR = {
-				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact }
 					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_qolab_winter_roses_artifact }
-			}
+				}
 			}
 		}
 	}
-	
+
 	agot_headgear_crown_of_qolab_generic = {
 		dna_modifiers = {
 			accessory = {
@@ -5331,7 +5331,8 @@ fp3_turkic_high_nobles = {
 			}
 		}
 	}
-		agot_headgear_crown_of_deep_winter_roses_crown = {
+
+	agot_headgear_crown_of_deep_winter_roses_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
