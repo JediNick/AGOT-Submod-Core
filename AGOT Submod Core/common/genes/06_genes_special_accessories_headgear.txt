@@ -3016,12 +3016,11 @@ special_genes = {
 				boy = male
 				girl = female
 			}
-		}
 			
+			##ADD ALL SUBMOD CORE BELOW THIS POINT!!!!
 			#New Westeros Crowns
-			
 			crowns_of_westeros = {
-				index = 192
+				index = 222
 				male = {
 					1 = stepstone_crown
 					1 = rhaegar_crown
@@ -3182,7 +3181,7 @@ special_genes = {
 			}			
 			
 			canon_queens = {
-				index = 193
+				index = 223
 				male = {
 					1 = rhaenys_circlet
 					1 = alyssavelaryon_crown
@@ -3206,7 +3205,7 @@ special_genes = {
 			}
 
 			KG_war_common = {
-				index = 200
+				index = 224
 				male = {
 					1 = male_headgear_secular_western_KG_helmet_01
 					1 = male_headgear_secular_western_KG_helmet_02
@@ -3224,7 +3223,7 @@ special_genes = {
 			}
 			
 			aegon_crown_gems = { # For commoners to use, non-gilded version only
-				index = 201
+				index = 225
 				male = {
 					1 = male_aegoncrown_01
 				}
@@ -3235,8 +3234,9 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+
 			aegon_crown_no_gems = { # For commoners to use, non-gilded version only
-				index = 202
+				index = 226
 				male = {
 					1 = male_aegoncrown_02
 				}
@@ -3247,8 +3247,9 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+
 			viserys_crown = {
-				index = 204
+				index = 227
 				male = {
 					1 = male_viserys_crown_01
 				}
@@ -3404,6 +3405,4 @@ special_genes = {
 			}			
 		}
 	}
-
-}
 

@@ -1151,8 +1151,9 @@
 		gene = headgear
 		template = agot_qolab
 	}
-}
 	
+
+	##ADD AGOT SUBMOD CONTENT BELOW THIS!!!
 	##Crowns of Westeros
 	add_accessory_modifiers = {
 		gene = headgear
@@ -1195,7 +1196,6 @@
 		template = KG_war_common
 	}
 
-	##LOTD
 	add_accessory_modifiers = {
 		gene = headgear
 		is_valid_custom = {
