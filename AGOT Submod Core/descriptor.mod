@@ -5,6 +5,6 @@ tags={
 }
 name="AGOT Submod Core"
 picture="thumbnail.png"
-supported_version="1.10.*"
+supported_version="1.11.*"
 path="LOCAL PATH"
 remote_file_id="3034473189"
