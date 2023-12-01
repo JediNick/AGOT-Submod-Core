@@ -6119,6 +6119,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = calla_blackfyre_circlet_artifact }}
 				AND = {
 					OR = {
@@ -6160,6 +6161,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = argella_crown_artifact }}
 				AND = {
 					OR = {
@@ -6201,6 +6203,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = sharra_arryn_crown_artifact }}
 				AND = {
 					OR = {
@@ -6242,6 +6245,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = roland_arryn_crown_artifact }}
 				AND = {
 					OR = {
@@ -6283,6 +6287,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_rhaegar_artifact }}
 				AND = {
 					OR = {
@@ -6346,6 +6351,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aegonvi_artifact }}
 				AND = {
 					OR = {
@@ -6391,6 +6397,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_viserysiii_artifact }}
 				AND = {
 					OR = {
@@ -6432,6 +6439,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_jonsnowtargaryen_artifact }}
 				AND = {
 					OR = {
@@ -6474,6 +6482,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_maesteraemon_artifact }}
 				AND = {
 					OR = {
@@ -6515,6 +6524,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aegontheuncrowned_artifact }}
 				AND = {
 					OR = {
@@ -6556,6 +6566,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_brightflame_artifact }}
 				AND = {
 					OR = {
@@ -6597,6 +6608,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_baelon_artifact }}
 				AND = {
 					OR = {
@@ -6638,6 +6650,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_valarr_artifact }}
 				AND = {
 					OR = {
@@ -6679,6 +6692,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aemonsonofjaehaerys_artifact }}
 				AND = {
 					OR = {
@@ -6720,6 +6734,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_baelorbreakspear_artifact }}
 				AND = {
 					OR = {
@@ -6761,6 +6776,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_laenorvelaryon_artifact }}
 				AND = {
 					OR = {
@@ -6909,6 +6925,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_duncandragonfly_artifact }}
 				AND = {
 					OR = {
@@ -6950,6 +6967,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_jonsnow_artifact }}
 				AND = {
 					OR = {
@@ -6995,6 +7013,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_shieraseastar_artifact }}
 				AND = {
 					OR = {
@@ -7037,6 +7056,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aereatargaryen_artifact }}
 				AND = {
 					OR = {
@@ -7078,6 +7098,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_rhaenysvelaryon_artifact }}
 				AND = {
 					OR = {
@@ -7119,6 +7140,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aegonblackfyre_artifact }}
 				AND = {
 					OR = {
@@ -7161,6 +7183,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_daemon_ii_blackfyre_artifact }}
 				this = character:Blackfyre_5 # Daemon II Blackfyre
 			}
@@ -7186,6 +7209,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_haegonblackfyre_artifact }}
 				OR = {
 					this = character:Blackfyre_6 # Haegon Blackfyre
@@ -7214,6 +7238,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 1000
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aenysblackfyre_artifact }}
 				this = character:Blackfyre_7 # Aenys Blackfyre
 			}
@@ -7239,6 +7264,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 240
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_maelysblackfyre_artifact }}
 				this = character:Blackfyre_14 # Maelys Blackfyre
 			}
@@ -7264,6 +7290,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 240
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_orysbaratheon_artifact }}
 				AND = {
 					OR = {
@@ -7308,6 +7335,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_robbstark_artifact }}
 				AND = {
 					OR = {
@@ -7344,6 +7372,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_branstark_artifact }
 				AND = {
 					OR = {
@@ -7380,6 +7409,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aegonsonofjaehaerys_artifact }
 				OR = {
 					primary_title.tier = tier_empire
@@ -7413,6 +7443,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_vaegon_artifact }
 				OR = {
 					primary_title.tier = tier_empire
@@ -7446,6 +7477,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_aemond_artifact }
 				OR = {
 					primary_title.tier = tier_empire
@@ -7479,6 +7511,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = daenerys_daughterofjaehaerys_crown_artifact }
 				OR = {
 					primary_title.tier = tier_empire
@@ -7512,6 +7545,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 247
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = garlandgardener_crown_artifact } }
 				OR = {
 						this = character:Gardener_17 # Garland II Gardener
@@ -7542,6 +7576,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 247
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = garthgoldhand_crown_artifact } }
 				OR = {
 						this = character:Gardener_32 # Garth VII 'Goldenhand' Gardener
@@ -7578,6 +7613,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_tyboltthunderbolt_artifact }}
 				AND = {
 					OR = {
@@ -7626,6 +7662,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_geroldlannister_artifact }}
 				AND = {
 					OR = {
@@ -7676,6 +7713,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_lancellannister_artifact }}
 				AND = {
 					OR = {
@@ -7727,6 +7765,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 240
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_margaerytyrell_artifact }}
 				AND = {
 					OR = {
@@ -8042,7 +8081,9 @@ fp3_turkic_high_nobles = {
 							agot_is_independent_ruler = yes
 						}
 					}
+					culture = culture:moonman
 					culture = culture:valeman
+					culture = culture:fingerman
 				}
 			}
 		}
@@ -8373,6 +8414,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_bloodraven_artifact }}
 				AND = {
 					OR = {
@@ -8439,6 +8481,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = mockingbird_circlet_artifact }}
 				AND = {
 					OR = {
@@ -8483,6 +8526,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_sansa_artifact }}
 				AND = {
 					OR = {
@@ -8527,6 +8571,7 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 250
 				is_crowns_westeros_loaded_trigger = yes
+				has_game_rule = show_dynamic_crowns_enabled
 				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_cersei_ruler_artifact }}
 				AND = {
 					primary_title = title:e_the_iron_throne
