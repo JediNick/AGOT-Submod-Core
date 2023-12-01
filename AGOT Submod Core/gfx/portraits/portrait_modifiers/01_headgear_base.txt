@@ -8651,9 +8651,9 @@ fp3_turkic_high_nobles = {
 			}
 			modifier = {
 				factor = 0
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
 				any_equipped_character_artifact = {
 					artifact_slot_type = helmet
-						agot_has_artifact_equiped = { ARTIFACT_VARIABLE = aegoncrown }
 						NOT = { has_variable = aegoncrown_nogems }
 					}
 				}

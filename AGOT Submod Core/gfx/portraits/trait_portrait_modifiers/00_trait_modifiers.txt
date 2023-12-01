@@ -970,6 +970,250 @@ blind = {
 			}
 		}
 	}
+	##SUBMOD CORE ADDED
+	disfigured_valyrian_01 = {
+		traits = {
+			disfigured
+		}
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				AND = {
+					has_character_flag = wears_valyrian_mask_01
+					is_lotd_loaded_trigger = yes
+					NOT = {
+						any_equipped_character_artifact = { 
+							artifact_slot_type = miscellaneous
+							has_variable = viserys_mask
+						}
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_face_mask_viserys
+				template = face_mask
+				value = 0.15
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_forehead_brow_curve
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply				
+				gene = gene_bs_forehead_brow_forward
+				value = 0.0
+			}
+			accessory = {
+				mode = add				
+				gene = beards
+				template = no_beard
+				value = 0.5
+			}
+		}
+	}
+	disfigured_valyrian_02 = {
+		traits = {
+			disfigured
+		}
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				has_character_flag = wears_valyrian_mask_02
+				is_lotd_loaded_trigger = yes			
+				NOT = {
+					any_equipped_character_artifact = { 
+						artifact_slot_type = miscellaneous
+						has_variable = viserys_mask
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_face_mask_viserys
+				template = face_mask
+				value = 0.35
+			}
+			accessory = {
+				mode = add				
+				gene = beards
+				template = no_beard
+				value = 0.5
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_forehead_brow_curve
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply				
+				gene = gene_bs_forehead_brow_forward
+				value = 0.0
+			}
+		}
+	}
+	disfigured_valyrian_03 = {
+		traits = {
+			disfigured
+		}
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				has_character_flag = wears_valyrian_mask_03
+				is_lotd_loaded_trigger = yes
+				NOT = {
+					any_equipped_character_artifact = { 
+						artifact_slot_type = miscellaneous
+						has_variable = viserys_mask
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_face_mask_viserys
+				template = face_mask
+				value = 0.55
+			}
+			accessory = {
+				mode = add				
+				gene = beards
+				template = no_beard
+				value = 0.5
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_forehead_brow_curve
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply				
+				gene = gene_bs_forehead_brow_forward
+				value = 0.0
+			}
+		}
+	}
+	disfigured_valyrian_04 = {
+		traits = {
+			disfigured
+		}
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				has_character_flag = wears_valyrian_mask_04
+				is_lotd_loaded_trigger = yes
+				NOT = {
+					any_equipped_character_artifact = { 
+						artifact_slot_type = miscellaneous
+						has_variable = viserys_mask
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_face_mask_viserys
+				template = face_mask
+				value = 0.75
+			}
+			accessory = {
+				mode = add				
+				gene = beards
+				template = no_beard
+				value = 0.5
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_forehead_brow_curve
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply				
+				gene = gene_bs_forehead_brow_forward
+				value = 0.0
+			}
+		}
+	}
+	disfigured_valyrian_05 = {
+		traits = {
+			disfigured
+		}
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				has_character_flag = wears_valyrian_mask_05
+				is_lotd_loaded_trigger = yes
+				NOT = {
+					any_equipped_character_artifact = { 
+						artifact_slot_type = miscellaneous
+						has_variable = viserys_mask
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			accessory = {
+				mode = add				
+				gene = special_headgear_face_mask_viserys
+				template = face_mask
+				value = 1.0
+			}
+			accessory = {
+				mode = add				
+				gene = beards
+				template = no_beard
+				value = 0.5
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_forehead_brow_curve
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply
+				gene = gene_bs_nose_forward
+				template = nose_forward_neg
+				value = 0.0
+			}
+			morph = {
+				mode = modify_multiply				
+				gene = gene_bs_forehead_brow_forward
+				value = 0.0
+			}
+		}
+	}
+
 	disfigured_replace_distrubing = {
 		base = disfigured
 		traits = {
@@ -1351,247 +1595,6 @@ drunkard = {
 				template = bloodshot_eyes
 				value = 0.5
 			}
-		}
-	}
-}
-##SUBMOD CORE ADDED
-disfigured_valyrian_01 = {
-	traits = {
-		disfigured
-	}
-	trigger = {
-		trigger_if = {
-			limit = { exists = root }
-			has_character_flag = wears_valyrian_mask_01
-			is_lotd_loaded_trigger = yes
-			NOT = {
-				any_equipped_character_artifact = { 
-					artifact_slot_type = miscellaneous
-					has_variable = viserys_mask
-				}
-			}
-		}
-	}
-	dna_modifiers = {
-		accessory = {
-			mode = add				
-			gene = special_headgear_face_mask_viserys
-			template = face_mask
-			value = 0.15
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_forehead_brow_curve
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_nose_forward
-			template = nose_forward_neg
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply				
-			gene = gene_bs_forehead_brow_forward
-			value = 0.0
-		}
-		accessory = {
-			mode = add				
-			gene = beards
-			template = no_beard
-			value = 0.5
-		}
-	}
-}
-disfigured_valyrian_02 = {
-	traits = {
-		disfigured
-	}
-	trigger = {
-		trigger_if = {
-			limit = { exists = root }
-			has_character_flag = wears_valyrian_mask_02
-			is_lotd_loaded_trigger = yes			
-			NOT = {
-				any_equipped_character_artifact = { 
-					artifact_slot_type = miscellaneous
-					has_variable = viserys_mask
-				}
-			}
-		}
-	}
-	dna_modifiers = {
-		accessory = {
-			mode = add				
-			gene = special_headgear_face_mask_viserys
-			template = face_mask
-			value = 0.35
-		}
-		accessory = {
-			mode = add				
-			gene = beards
-			template = no_beard
-			value = 0.5
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_forehead_brow_curve
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_nose_forward
-			template = nose_forward_neg
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply				
-			gene = gene_bs_forehead_brow_forward
-			value = 0.0
-		}
-	}
-}
-disfigured_valyrian_03 = {
-	traits = {
-		disfigured
-	}
-	trigger = {
-		trigger_if = {
-			limit = { exists = root }
-			has_character_flag = wears_valyrian_mask_03
-			is_lotd_loaded_trigger = yes
-			NOT = {
-				any_equipped_character_artifact = { 
-					artifact_slot_type = miscellaneous
-					has_variable = viserys_mask
-				}
-			}
-		}
-	}
-	dna_modifiers = {
-		accessory = {
-			mode = add				
-			gene = special_headgear_face_mask_viserys
-			template = face_mask
-			value = 0.55
-		}
-		accessory = {
-			mode = add				
-			gene = beards
-			template = no_beard
-			value = 0.5
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_forehead_brow_curve
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_nose_forward
-			template = nose_forward_neg
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply				
-			gene = gene_bs_forehead_brow_forward
-			value = 0.0
-		}
-	}
-}
-disfigured_valyrian_04 = {
-	traits = {
-		disfigured
-	}
-	trigger = {
-		trigger_if = {
-			limit = { exists = root }
-			has_character_flag = wears_valyrian_mask_04
-			is_lotd_loaded_trigger = yes
-			NOT = {
-				any_equipped_character_artifact = { 
-					artifact_slot_type = miscellaneous
-					has_variable = viserys_mask
-				}
-			}
-		}
-	}
-	dna_modifiers = {
-		accessory = {
-			mode = add				
-			gene = special_headgear_face_mask_viserys
-			template = face_mask
-			value = 0.75
-		}
-		accessory = {
-			mode = add				
-			gene = beards
-			template = no_beard
-			value = 0.5
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_forehead_brow_curve
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_nose_forward
-			template = nose_forward_neg
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply				
-			gene = gene_bs_forehead_brow_forward
-			value = 0.0
-		}
-	}
-}
-disfigured_valyrian_05 = {
-	traits = {
-		disfigured
-	}
-	trigger = {
-		trigger_if = {
-			limit = { exists = root }
-			has_character_flag = wears_valyrian_mask_05
-			is_lotd_loaded_trigger = yes
-			NOT = {
-				any_equipped_character_artifact = { 
-					artifact_slot_type = miscellaneous
-					has_variable = viserys_mask
-				}
-			}
-		}
-	}
-	dna_modifiers = {
-		accessory = {
-			mode = add				
-			gene = special_headgear_face_mask_viserys
-			template = face_mask
-			value = 1.0
-		}
-		accessory = {
-			mode = add				
-			gene = beards
-			template = no_beard
-			value = 0.5
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_forehead_brow_curve
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply
-			gene = gene_bs_nose_forward
-			template = nose_forward_neg
-			value = 0.0
-		}
-		morph = {
-			mode = modify_multiply				
-			gene = gene_bs_forehead_brow_forward
-			value = 0.0
 		}
 	}
 }
