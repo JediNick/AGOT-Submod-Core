@@ -1169,7 +1169,6 @@ cloaks = {
 			}
 		}
 	}
-}
     
 	kingsguard_cloak_black = {
 	    dna_modifiers = {
@@ -1251,5 +1250,4 @@ cloaks = {
 	 		}
 	     }
 	 }
-
 }

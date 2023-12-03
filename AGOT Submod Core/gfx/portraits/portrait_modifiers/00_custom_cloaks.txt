@@ -163,7 +163,6 @@
 		gene = cloaks
 		template = male_cloaks_secular_shouldercape_coa_01
 	}
-}
 	
 	add_accessory_modifiers = {
 		gene = cloaks
@@ -181,7 +180,4 @@
 		}
 		template = kingsguard_cloak_aotk
 	}
-
-
-
 }
