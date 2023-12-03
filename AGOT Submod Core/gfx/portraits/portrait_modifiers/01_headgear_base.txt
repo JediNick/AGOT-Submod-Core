@@ -5912,7 +5912,7 @@ fp3_turkic_high_nobles = {
 				mode = add
 				gene = headgear
 				template = canon_queens
-				accessory = alysannetargaryen_crown
+				accessory = alysannecrown
 			}
 		}
 		weight = {
@@ -5920,12 +5920,12 @@ fp3_turkic_high_nobles = {
 			modifier = {
 				add = 300
 				is_crowns_westeros_loaded_trigger = yes
-				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_alysanne_artifact }
+				agot_has_artifact_equiped = { ARTIFACT_VARIABLE = alysannecrown_artifact }
 			}
 			modifier = {
 				add = 1000
 				is_crowns_westeros_loaded_trigger = yes
-				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_alysanne_artifact }}
+				NOT = { agot_has_artifact_equiped = { ARTIFACT_VARIABLE = alysannecrown_artifact }}
 				OR = {
 					this = character:Targaryen_36 # Alysanne
 					this = character:Arryn_80 # Aemma
