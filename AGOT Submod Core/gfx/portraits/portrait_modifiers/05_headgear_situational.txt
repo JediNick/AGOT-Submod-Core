@@ -135,6 +135,8 @@
 				OR = {
 					portrait_western_clothing_trigger = yes
 					portrait_northern_clothing_trigger = yes
+					#AGOT Added
+					portrait_byzantine_clothing_trigger = yes
 				}
 			}
 		}
@@ -182,7 +184,9 @@
 				add = 1000
 				has_ep2_dlc_trigger = yes
 				portrait_ep2_wedding_clothes_trigger = yes
-				portrait_byzantine_clothing_trigger = yes
+				#AGOT Modified
+				# portrait_byzantine_clothing_trigger = yes
+				always = no
 			}
 		}
 	}
@@ -205,7 +209,8 @@
 				OR = {
 					has_character_flag = teacher_1
 					has_character_flag = teacher_2
-					has_character_flag = has_reading_glasses
+					#AGOT Disabled
+					#has_character_flag = has_reading_glasses
 				}
 			}
 		}

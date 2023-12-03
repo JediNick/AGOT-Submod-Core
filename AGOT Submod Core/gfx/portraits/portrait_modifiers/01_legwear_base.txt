@@ -445,7 +445,7 @@
 				mode = add
 				gene = legwear
 				template = stormlands_war_03_legwear
-				value = 1
+				accessory = male_legwear_secular_stormlands_war_03
 			}
 		}
 		weight = {
@@ -460,6 +460,31 @@
 		}
 	}
 
+	agot_legwear_stormlander_baratheon_three = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = stormlands_war_03_legwear
+				accessory = male_legwear_secular_stormlands_baratheon_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 210
+				exists = this
+				highest_held_title_tier >= tier_duchy
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_stormlander_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Baratheon
+				}
+			}
+		}
+	}
+
 	agot_legwear_reachman_three = {
 
 		dna_modifiers = {
@@ -467,7 +492,7 @@
 				mode = add
 				gene = legwear
 				template = reach_war_03_legwear
-				value = 1
+				accessory = male_legwear_secular_reach_war_03
 			}
 		}
 		weight = {
@@ -478,6 +503,31 @@
 				highest_held_title_tier >= tier_duchy
 				portrait_wear_armor_trigger = yes
 				portrait_reachman_clothing_trigger = yes
+			}
+		}
+	}
+
+	agot_legwear_reachman_tyrell_three = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = reach_war_03_legwear
+				accessory = male_legwear_secular_reach_tyrell_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				exists = this
+				highest_held_title_tier >= tier_duchy
+				portrait_wear_armor_trigger = yes
+				AND = {
+				portrait_reachman_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Tyrell
+				}
 			}
 		}
 	}
@@ -495,10 +545,11 @@
 		weight = {
 			base = 0
 			modifier = {
-				add = 250
+				add = 300
 				exists = this
 				portrait_wear_armor_trigger = yes
 				portrait_valyrian_clothing_trigger = yes
+				portrait_wear_rhaegar_armor_trigger = yes
 			}
 		}
 	}
@@ -510,7 +561,7 @@
 				mode = add
 				gene = legwear
 				template = valyrian_war_legwear
-				value = 1
+				accessory = male_legwear_secular_valyrian_war_03
 			}
 		}
 		weight = {
@@ -523,6 +574,54 @@
 			}
 		}
 	}
+	
+	agot_legwear_valyrian_targaryen = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = valyrian_war_legwear
+				accessory = male_legwear_secular_valyrian_targaryen_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 260
+				exists = this
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_valyrian_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Targaryen
+				}
+			}
+		}
+	}
+
+	agot_legwear_valyrian_blackfyre = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = valyrian_war_legwear
+				accessory = male_legwear_secular_valyrian_blackfyre_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 270
+				exists = this
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_valyrian_clothing_trigger = yes
+					house = house:house_Blackfyre
+				}
+			}
+		}
+	}
 
 	agot_legwear_westerman = {
 
@@ -531,7 +630,7 @@
 				mode = add
 				gene = legwear
 				template = westerlands_war_03_legwear
-				value = 1
+				accessory = male_legwear_secular_westerlands_war_03
 			}
 		}
 		weight = {
@@ -545,6 +644,32 @@
 			}
 		}
 	}
+	
+	agot_legwear_westerman_lannister = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = westerlands_war_03_legwear
+				accessory = male_legwear_secular_westerlands_lannister_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 125
+				exists = this
+				highest_held_title_tier >= tier_duchy
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_westerman_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Lannister
+				}
+			}
+		}
+	}
+
 
 	agot_legwear_ironborn = {
 
@@ -553,7 +678,7 @@
 				mode = add
 				gene = legwear
 				template = ironborn_war_03_legwear
-				value = 1
+				accessory = male_legwear_secular_ironborn_war_03
 			}
 		}
 		weight = {
@@ -566,6 +691,30 @@
 			}
 		}
 	}
+	
+	agot_legwear_ironborn_greyjoy = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = ironborn_war_03_legwear
+				accessory = male_legwear_secular_ironborn_greyjoy_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 260
+				exists = this
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_ironborn_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Greyjoy
+				}
+			}
+		}
+	}
 
 	agot_legwear_dornish = {
 
@@ -574,7 +723,7 @@
 				mode = add
 				gene = legwear
 				template = dornish_war_03_legwear
-				value = 1
+				accessory = male_legwear_secular_dornish_war_03
 			}
 		}
 		weight = {
@@ -584,7 +733,57 @@
 				exists = this
 				highest_held_title_tier >= tier_duchy
 				portrait_wear_armor_trigger = yes
-				portrait_dornish_clothing_trigger = yes
+				portrait_stone_dornish_clothing_trigger = yes
+			}
+		}
+	}
+	
+	agot_legwear_dornish_copper = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = dornish_war_03_legwear
+				accessory = male_legwear_secular_dornish_martell_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 250
+				exists = this
+				highest_held_title_tier >= tier_duchy
+				portrait_wear_armor_trigger = yes
+				OR = {
+					portrait_salt_dornish_clothing_trigger = yes
+					portrait_sand_dornish_clothing_trigger = yes
+				}
+			}
+		}
+	}
+	
+	agot_legwear_dornish_martell = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = dornish_war_03_legwear
+				accessory = male_legwear_secular_dornish_martell_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 260
+				exists = this
+				highest_held_title_tier >= tier_duchy
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_dornish_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Martell
+				}
 			}
 		}
 	}
@@ -617,7 +816,7 @@
 				mode = add
 				gene = legwear
 				template = north_war_03_legwear
-				value = 1
+				accessory = male_legwear_secular_north_war_03
 			}
 		}
 		weight = {
@@ -629,6 +828,30 @@
 			}
 		}
 	}
+	
+	agot_legwear_northman_stark = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = north_war_03_legwear
+				accessory = male_legwear_secular_north_stark_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 110
+				portrait_wear_armor_trigger = yes
+				AND = {
+					portrait_the_north_clothing_trigger = yes
+					dynasty ?= dynasty:dynn_Stark
+				}
+			}
+		}
+	}
+	
 	kingsguard_01_legwear = {
 
 		dna_modifiers = {

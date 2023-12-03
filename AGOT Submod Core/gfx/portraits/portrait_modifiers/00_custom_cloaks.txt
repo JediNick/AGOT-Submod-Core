@@ -125,6 +125,49 @@
 	add_accessory_modifiers = {
 		gene = cloaks
 		is_valid_custom = {
+			has_fp1_dlc_trigger = yes
+		}
+		template = agot_coa_cloaks_fp1
+	}
+
+	add_accessory_modifiers = {
+		gene = cloaks
+		is_valid_custom = {
+			has_ep1_dlc_trigger = yes
+		}
+		template = agot_coa_cloaks_ep1
+	}
+
+	add_accessory_modifiers = {
+		gene = cloaks
+		is_valid_custom = {
+			has_ep2_dlc_trigger = yes
+		}
+		template = agot_coa_cloaks_ep2
+	}
+
+	add_accessory_modifiers = {
+		gene = cloaks
+		is_valid_custom = {
+			has_dlc_feature = elegance_of_the_empire
+		}
+		template = agot_coa_cloaks_sp2
+	}
+
+	add_accessory_modifiers = {
+		gene = cloaks
+		template = agot_coa_cloaks_western_royalty
+	}
+
+	add_accessory_modifiers = {
+		gene = cloaks
+		template = male_cloaks_secular_shouldercape_coa_01
+	}
+}
+	
+	add_accessory_modifiers = {
+		gene = cloaks
+		is_valid_custom = {
 			has_ep1_dlc_trigger = yes
 		}
 		template = kingsguard_cloak

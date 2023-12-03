@@ -1067,6 +1067,110 @@ cloaks = {
         }
     }
     
+    agot_cloak_northman_low = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_coa_cloaks_fp1_dynamic_low
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 210
+				has_fp1_dlc_trigger = yes
+				OR = {
+					portrait_low_nobles_clothing_trigger = {
+						CULTURE_INPUT = the_north
+					}
+					portrait_low_nobles_armor_trigger = {
+						CULTURE_INPUT = the_north
+					}
+				}
+				NOT = {
+					portrait_wear_ned_stark_armor_trigger = yes
+				}
+			}
+		}
+	}
+
+	agot_cloak_northman_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_coa_cloaks_fp1_dynamic_high
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 210
+				has_fp1_dlc_trigger = yes
+				OR = {
+					portrait_high_nobles_clothing_trigger = {
+						CULTURE_INPUT = the_north
+					}
+					portrait_high_nobles_armor_trigger = {
+						CULTURE_INPUT = the_north
+					}
+				}
+				NOT = {
+					portrait_wear_ned_stark_armor_trigger = yes
+				}
+			}
+		}
+	}
+
+	agot_cloak_riverman = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = male_cloaks_secular_shouldercape_coa_01_dynamic
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 240
+				is_male = yes
+				portrait_high_nobles_armor_trigger = {
+					CULTURE_INPUT = riverlander
+				}
+			}
+		}
+	}
+
+	agot_cloak_riverman_tully = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = male_cloaks_secular_shouldercape_coa_01
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 240
+				is_male = yes
+				AND = {
+					portrait_high_nobles_armor_trigger = {
+						CULTURE_INPUT = riverlander
+					}
+					dynasty ?= dynasty:dynn_Tully
+				}
+			}
+		}
+	}
+}
+    
 	kingsguard_cloak_black = {
 	    dna_modifiers = {
 	        accessory = {
