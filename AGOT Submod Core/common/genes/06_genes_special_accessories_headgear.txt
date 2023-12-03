@@ -2331,9 +2331,10 @@ special_genes = {
 				index = 148
 				male = {
 					1 = male_headgear_secular_westerlands_war_03
+					1 = male_headgear_secular_westerlands_lannister_war_03
 				}
 				female = {
-					0 = red_priest_necklace_square_01
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2541,7 +2542,7 @@ special_genes = {
 					1 = male_headgear_secular_riverlands_war_03
 				}
 				female = {
-					1 = male_headgear_secular_riverlands_war_03
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2554,7 +2555,7 @@ special_genes = {
 					1 = male_headgear_secular_vale_war_04
 				}
 				female = {
-					1 = male_headgear_secular_vale_war_04
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2567,7 +2568,7 @@ special_genes = {
 					1 = male_headgear_secular_vale_war_03
 				}
 				female = {
-					1 = male_headgear_secular_vale_war_03
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2578,9 +2579,10 @@ special_genes = {
 				index = 167
 				male = {
 					1 = male_headgear_secular_reach_war_03
+					1 = male_headgear_secular_reach_tyrell_war_03
 				}
 				female = {
-					1 = male_headgear_secular_reach_war_03
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2593,7 +2595,7 @@ special_genes = {
 					1 = male_headgear_secular_valyrian_war_04
 				}
 				female = {
-					1 = male_headgear_secular_valyrian_war_04
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2606,7 +2608,7 @@ special_genes = {
 					1 = male_headgear_secular_kingsguard_war_01
 				}
 				female = {
-					1 = male_headgear_secular_kingsguard_war_01
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2617,9 +2619,11 @@ special_genes = {
 				index = 170
 				male = {
 					1 = male_headgear_secular_valyrian_war_03
+					1 = male_headgear_secular_valyrian_targaryen_war_03
+					1 = male_headgear_secular_valyrian_blackfyre_war_03
 				}
 				female = {
-					1 = male_headgear_secular_valyrian_war_03
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2632,7 +2636,7 @@ special_genes = {
 					1 = male_headgear_secular_stormlands_war_04
 				}
 				female = {
-					1 = male_headgear_secular_stormlands_war_04
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2645,7 +2649,7 @@ special_genes = {
 					1 = male_headgear_secular_stormlands_war_03
 				}
 				female = {
-					1 = male_headgear_secular_stormlands_war_03
+					0 = empty
 				}
 				boy = male
 				girl = female
@@ -2656,9 +2660,11 @@ special_genes = {
 				index = 173
 				male = {
 					1 = male_headgear_secular_dorne_war_03
+					1 = male_headgear_secular_dorne_copper_war_03
+					1 = male_headgear_secular_dorne_martell_war_03
 				}
 				female = {
-					1 = male_headgear_secular_dorne_war_03
+					0 = empty
 				}
 				boy = male
 				girl = female
