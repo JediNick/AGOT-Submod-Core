@@ -6020,7 +6020,6 @@ fp3_turkic_high_nobles = {
 				OR = {
 					this = character:Targaryen_83 # Daena
 					#this = character:77024496 #  Rohanne of Tyrosh - Reenable once Essos added
-					this = character:Blackfyre_3 # Calla Blackfyre
 				}
 			}
 		}
