@@ -2535,7 +2535,7 @@ special_genes = {
 				}
 
 				female = {
-					1 = empty	
+					0 = f_clothes_sec_northern_war_nob_01_lo	
 				}
 				boy = male
 				girl = female
