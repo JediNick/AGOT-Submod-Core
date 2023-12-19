@@ -63,6 +63,11 @@
 		template = dragon_prince_legwear
 	}
 	
+	add_accessory_modifiers = {
+		gene = legwear
+		template = agot_trousers
+	}
+	
 	#AGOT Added, Specific Clothes
 	add_accessory_modifiers = {
 		gene = legwear

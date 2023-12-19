@@ -345,7 +345,8 @@ accessory_genes = {
 				1 = male_legwear_dragon_prince03
 			}
 			female = {
-				1 = empty
+				1 = female_legwear_dragon_prince01
+				1 = female_legwear_dragon_prince03
 			}
 			boy = male
 			girl = female
@@ -356,7 +357,23 @@ accessory_genes = {
 				1 = male_legwear_dragon_prince02
 			}
 			female = {
-				1 = empty
+				1 = female_legwear_dragon_prince02
+			}
+			boy = male
+			girl = female
+		}
+		
+		agot_trousers = {
+			index = 27
+			male = {
+				1 = male_legwear_secular_agot_trousers_01
+				1 = male_legwear_secular_agot_trousers_black_01
+				1 = male_legwear_secular_agot_trousers_dynastic_01
+			}
+			female = {
+				1 = female_legwear_secular_agot_trousers_01
+				1 = female_legwear_secular_agot_trousers_black_01
+				1 = female_legwear_secular_agot_trousers_dynastic_01
 			}
 			boy = male
 			girl = female

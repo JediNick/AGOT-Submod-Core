@@ -2128,13 +2128,11 @@ special_genes = {
 				index = 103
 
 				male = {
-					0 = male_clothes_secular_western_nobility_01_high
+					0 = empty
 				}
 				female = {
 					1 = female_clothes_secular_meereen_nobility_01
 				}
-				boy = male
-				girl = female
 			}
 
 			#AGOT Added
@@ -2511,6 +2509,64 @@ special_genes = {
 				}
 				female = {
 					1 = female_clothes_secular_valyrian_nobility_01
+				}
+				boy = male
+				girl = female
+			}
+			#AGOT Added
+			north_war_ned_coa_nobility_clothes = {
+				index = 129
+
+				male = {
+					1 = male_clothes_north_war_ned_coa_01
+				}
+				female = {
+					0 = f_clothes_sec_northern_war_nob_01_lo
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			robert_baratheon_war_coa_clothes = {
+				index = 130
+
+				male = {
+					1 = male_clothes_stormlands_coa_war_04
+				}
+				female = {
+					0 = f_clothes_sec_northern_war_nob_01_lo
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			agot_royal_doublet_clothes = {
+				index = 131
+
+				male = {
+					1 = male_clothes_secular_agot_royal_doublet_01
+					1 = male_clothes_secular_agot_royal_doublet_dynastic_01
+				}
+				female = {
+					1 = female_clothes_secular_agot_royal_doublet_01
+					1 = female_clothes_secular_agot_royal_doublet_dynastic_01
+				}
+				boy = male
+				girl = female
+			}
+
+			#AGOT Added
+			mourning_dress = {
+				index = 132
+
+				male = {
+					0 = male_clothes_secular_western_nobility_01_high
+				}
+				female = {
+					1 = female_clothes_mourning_dress_01
+					1 = female_clothes_mourning_dress_02
 				}
 				boy = male
 				girl = female

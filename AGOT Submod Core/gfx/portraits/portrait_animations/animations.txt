@@ -48,7 +48,7 @@ idle = {
 				base = 0
 
 				modifier = {
-					add = 100
+					add = 1000
 					portrait_wear_armor_trigger = yes
 					NOT = {
 						OR = {

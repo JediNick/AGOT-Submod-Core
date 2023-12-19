@@ -1130,7 +1130,7 @@ cloaks = {
 			accessory = {
 				mode = add
 				gene = cloaks
-				template = male_cloaks_secular_shouldercape_coa_01_dynamic
+				template = male_cloaks_secular_shouldercape_coa_01
 				range = { 0 1 }
 			}
 		}
@@ -1145,13 +1145,13 @@ cloaks = {
 			}
 		}
 	}
-
-	agot_cloak_riverman_tully = {
+	
+	agot_cloak_valeman = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = cloaks
-				template = male_cloaks_secular_shouldercape_coa_01
+				template = agot_coa_cloaks_ep1
 				range = { 0 1 }
 			}
 		}
@@ -1159,16 +1159,18 @@ cloaks = {
 			base = 0
 			modifier = {
 				add = 240
+				has_ep1_dlc_trigger = yes
 				is_male = yes
-				AND = {
-					portrait_high_nobles_armor_trigger = {
-						CULTURE_INPUT = riverlander
-					}
-					dynasty ?= dynasty:dynn_Tully
+				portrait_high_nobles_armor_trigger = {
+					CULTURE_INPUT = valeman
+				}
+				NOT = {
+					dynasty ?= dynasty:dynn_Royce
 				}
 			}
 		}
 	}
+
     
 	kingsguard_cloak_black = {
 	    dna_modifiers = {

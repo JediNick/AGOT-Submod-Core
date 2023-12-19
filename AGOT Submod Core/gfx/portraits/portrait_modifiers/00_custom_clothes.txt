@@ -610,6 +610,11 @@ add_accessory_modifiers = {
 
 	add_accessory_modifiers = {
 		gene = clothes
+		template = mourning_dress
+	}
+	
+	add_accessory_modifiers = {
+		gene = clothes
 		template = dragonbane_doublet_clothes
 	}
 
@@ -621,6 +626,11 @@ add_accessory_modifiers = {
 	add_accessory_modifiers = {
 		gene = clothes
 		template = unlikely_gown_royal_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = agot_royal_doublet_clothes
 	}
 
 	#AGOT Added, Generic Armor
@@ -684,6 +694,11 @@ add_accessory_modifiers = {
 		gene = clothes
 		template = north_war_ned_nobility_clothes
 	}
+	
+	add_accessory_modifiers = {
+		gene = clothes
+		template = north_war_ned_coa_nobility_clothes
+	}
 
 	add_accessory_modifiers = {
 		gene = clothes
@@ -692,8 +707,14 @@ add_accessory_modifiers = {
 	
 	add_accessory_modifiers = {
 		gene = clothes
+		template = robert_baratheon_war_coa_clothes
+	}
+	
+	add_accessory_modifiers = {
+		gene = clothes
 		template = royce_war_nobility_clothes
 	}
+	
 	
 	add_accessory_modifiers = {
 		gene = clothes

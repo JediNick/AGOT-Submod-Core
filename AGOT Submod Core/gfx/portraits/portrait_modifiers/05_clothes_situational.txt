@@ -420,7 +420,10 @@
                 portrait_valeman_clothing_trigger = no
                     }
                 }
-                NOT = { employer ?= title:e_the_iron_throne.holder }
+                NAND = {
+                    employer ?= title:e_the_iron_throne.holder
+                    has_court_position = maester_court_position
+                }
             }
         }
     }
@@ -462,7 +465,10 @@
                         portrait_valeman_clothing_trigger = yes
                     }
                 }
-                NOT = { employer ?= title:e_the_iron_throne.holder }
+                NAND = {
+                    employer ?= title:e_the_iron_throne.holder
+                    has_court_position = maester_court_position
+                }
             }
         }
     }
@@ -500,12 +506,15 @@
                     }
                     has_trait = nightswatch
                 }
-                NOT = { employer ?= title:e_the_iron_throne.holder }
+                NAND = {
+                    employer ?= title:e_the_iron_throne.holder
+                    has_court_position = maester_court_position
+                }
             }
         }
     }
     
-    agot_clothing_grandmaester = {
+	agot_clothing_grandmaester = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -538,6 +547,7 @@
                 AND = {
                     exists = title:e_the_iron_throne.holder
                     employer ?= title:e_the_iron_throne.holder
+                    has_court_position = maester_court_position
                 }
             }
         }
