@@ -783,23 +783,9 @@ accessory_genes = {
 			girl = female
 		}
 
-		male_cloaks_secular_shouldercape_coa_01_dynamic = {
-			index = 27
-			male = {
-				2 = male_cloaks_secular_shouldercape_coa_01
-				1 = empty
-			}
-			female = {
-				2 = empty
-				1 = empty
-			}
-			boy = male
-			girl = female
-		}
-
 		#AGOT Added
 		kingsguard_cloak_aotk = {
-			index = 28
+			index = 27
 			male = {
 				1 = kingsguard_cloak_02
 				1 = kingsguard_cloak_03
