@@ -8583,6 +8583,28 @@ fp3_turkic_high_nobles = {
 		}
 	}
 
+	agot_headgear_crown_of_robert_baratheon = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crowns_of_westeros
+				accessory = crown_of_robert_baratheon
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				is_crowns_westeros_loaded_trigger = yes
+				AND = {
+					agot_has_artifact_equiped = { ARTIFACT_VARIABLE = crown_of_robert_baratheon_artifact }
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+	}
+
 	# LOTD
 	aegon_headgear_01 = {
 		dna_modifiers = {
