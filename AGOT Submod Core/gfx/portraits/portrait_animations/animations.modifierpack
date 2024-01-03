@@ -725,6 +725,16 @@ one_handed_sword = {
         animations = fat_additive
         animations = dwarf_additive
     }
+
+    portrait_modifier = { # Equipped
+        trigger = {
+            any_equipped_character_artifact = { artifact_type = sword }
+        }
+        animations_props = artifact_sword_equipped_prop
+        animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+    }
 	
 	#Default Fallbacks!
 	portrait_modifier = {
@@ -763,16 +773,6 @@ one_handed_sword = {
 		animations = council_marshal_decal
 	}
     #AGOT End
-
-    portrait_modifier = { # Equipped
-        trigger = {
-            any_equipped_character_artifact = { artifact_type = sword }
-        }
-        animations_props = artifact_sword_equipped_prop
-        animations = council_marshal_decal
-        animations = fat_additive
-        animations = dwarf_additive
-    }
 	
 	portrait_modifier = { # Hunting
         trigger = {
