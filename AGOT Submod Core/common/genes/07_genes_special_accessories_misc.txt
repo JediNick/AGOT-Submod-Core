@@ -691,9 +691,11 @@ accessory_genes = {
 			index = 19
 			male = {
 				1 = male_cloaks_secular_fp1_nobility_01_agot
+				1 = male_cloaks_secular_fp1_agot_northern_01
 			}
 			female = {
 				1 = female_cloaks_secular_fp1_nobility_01_agot
+				1 = female_cloaks_secular_fp1_agot_northern_01
 			}
 		}
 
@@ -714,19 +716,35 @@ accessory_genes = {
 		agot_coa_cloaks_fp1_dynamic_high = {
 			index = 21
 			male = {
-				3 = male_cloaks_secular_fp1_nobility_01_agot
+				4 = male_cloaks_secular_fp1_nobility_01_agot
+				2 = male_cloaks_secular_fp1_agot_northern_01
 				1 = male_furs_secular_fp1_nobility_03
-				2 = empty
+				3 = empty
 			}
 			female = {
-				3 = female_cloaks_secular_fp1_nobility_01_agot
+				4 = female_cloaks_secular_fp1_nobility_01_agot
+				2 = female_cloaks_secular_fp1_agot_northern_01
 				1 = female_furs_secular_fp1_nobility_03
-				2 = empty
+				3 = empty
+			}
+		}
+
+		agot_coa_cloaks_fp1_dynamic_stark = {
+			index = 22
+			male = {
+				2 = male_cloaks_secular_fp1_agot_northern_01
+				1 = male_cloaks_secular_fp1_nobility_01_agot
+				1 = empty
+			}
+			female = {
+				2 = female_cloaks_secular_fp1_agot_northern_01
+				1 = female_cloaks_secular_fp1_nobility_01_agot
+				1 = empty
 			}
 		}
 
 		agot_coa_cloaks_ep1 = {
-			index = 22
+			index = 23
 			male = {
 				1 = male_cloaks_secular_ep1_adventurer_01_agot
 			}
@@ -736,7 +754,7 @@ accessory_genes = {
 		}
 
 		agot_coa_cloaks_ep2 = {
-			index = 23
+			index = 24
 			male = {
 				1 = m_cloaks_sec_ep2_western_travel_01_agot
 			}
@@ -748,7 +766,7 @@ accessory_genes = {
 		}
 
 		agot_coa_cloaks_sp2 = {
-			index = 24
+			index = 25
 			male = {
 				1 = m_cloaks_sec_sp2_western_imp_01_agot
 			}
@@ -760,7 +778,7 @@ accessory_genes = {
 		}
 
 		agot_coa_cloaks_western_royalty = {
-			index = 25
+			index = 26
 			male = {
 				1 = male_cloaks_secular_western_royalty_01_agot
 			}
@@ -772,7 +790,7 @@ accessory_genes = {
 		}
 
 		male_cloaks_secular_shouldercape_coa_01 = {
-			index = 26
+			index = 27
 			male = {
 				1 = male_cloaks_secular_shouldercape_coa_01
 			}

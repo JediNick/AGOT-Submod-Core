@@ -630,7 +630,17 @@ add_accessory_modifiers = {
 
 	add_accessory_modifiers = {
 		gene = clothes
+		template = unlikely_gown_dynastic_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
 		template = agot_royal_doublet_clothes
+	}
+
+	add_accessory_modifiers = {
+		gene = clothes
+		template = agot_summer_dress_clothes
 	}
 
 	#AGOT Added, Generic Armor

@@ -370,6 +370,7 @@ special_genes = {
 					1 = female_clothes_secular_dde_hre_nobility_01_high
 					#AGOT Added
 					1 = female_clothes_secular_unlikely_gown_01
+					1 = female_clothes_secular_agot_summer_dress_01
 				}
 
 				boy = male
@@ -1698,6 +1699,8 @@ special_genes = {
 				female = {
 					1 = female_clothes_secular_fp2_iberian_christian_nobility_01_low	
 					1 = female_clothes_secular_fp2_iberian_christian_nobility_02_low
+					#AGOT Added
+					1 = female_clothes_secular_agot_summer_dress_01
 
 				}
 				boy = male
@@ -1715,6 +1718,8 @@ special_genes = {
 				female = {	
 					1 = female_clothes_secular_fp2_iberian_christian_nobility_01_high	
 					1 = female_clothes_secular_fp2_iberian_christian_nobility_02_high
+					#AGOT Added
+					1 = female_clothes_secular_agot_summer_dress_01
 
 				}
 				boy = male
@@ -1896,6 +1901,7 @@ special_genes = {
 					2 = f_clothes_sec_ep2_western_era3_nob_02_hi
 					#AGOT Added
 					1 = female_clothes_secular_unlikely_gown_01
+					1 = female_clothes_secular_agot_summer_dress_01
 				}
 				boy = male
 				girl = female
@@ -2128,7 +2134,7 @@ special_genes = {
 				index = 103
 
 				male = {
-					0 = empty
+					0 = male_clothes_secular_western_nobility_01_high
 				}
 				female = {
 					1 = female_clothes_secular_meereen_nobility_01
@@ -2572,6 +2578,34 @@ special_genes = {
 				girl = female
 			}
 			
+			#AGOT Added
+			agot_summer_dress_clothes = {
+				index = 133
+
+				male = {
+					0 = male_clothes_secular_western_nobility_01_high
+				}
+				female = {
+					1 = female_clothes_secular_agot_summer_dress_01
+					1 = female_clothes_secular_agot_summer_dress_02
+				}
+				boy = male
+				girl = female
+			}
+			
+			#AGOT Added
+			unlikely_gown_dynastic_clothes = {
+				index = 134
+
+				male = {
+					1 = male_clothes_secular_unlikely_gown_dynastic_01
+				}
+				female = {
+					1 = female_clothes_secular_unlikely_gown_dynastic_01
+				}
+				boy = male
+				girl = female
+			}
 			
 			#NOTAGOTADDED
 			kingsguard_armor_clothes = {
