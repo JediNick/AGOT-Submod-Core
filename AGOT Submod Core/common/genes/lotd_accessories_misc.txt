@@ -132,8 +132,20 @@
 			girl = female
 		}
 
-		aegon_dagger_glow_prop = {
+		blackfyre_rehilt_prop = {
 			index = 10
+			male = {
+				1 = blackfyre_rehilt_prop
+			}
+			female = {
+				1 = blackfyre_rehilt_prop
+			}
+			boy = male
+			girl = female	
+		}
+
+		aegon_dagger_glow_prop = {
+			index = 11
 			male = {
 				1 = aegon_dagger_glow_prop
 			}
@@ -143,6 +155,8 @@
 			boy = male
 			girl = female
 		}
+
+
 
 	
 	}

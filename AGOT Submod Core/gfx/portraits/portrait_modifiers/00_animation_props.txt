@@ -2320,6 +2320,18 @@
 			}
 		}	
 	}
+
+		##Lotd
+	artifact_blackfyre_rehilt_prop = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = props_valyrian_lotd
+				template = blackfyre_rehilt_prop
+				value = 1.0
+			}
+		}	
+	}
 	
 	artifact_darksister_prop = {
 		dna_modifiers = {

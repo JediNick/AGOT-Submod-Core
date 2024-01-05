@@ -1408,10 +1408,6 @@ fp3_iranian_high_nobles = {
             }  
             modifier = {
                 factor = 0
-                NOT =  { has_game_rule = enable_generic_valyrian_clothing }
-            }
-            modifier = {
-                factor = 0
                 NOT =  { is_lotd_loaded_trigger = yes }
             }
             ##Dont give dragon themed dress to non dragon lords
